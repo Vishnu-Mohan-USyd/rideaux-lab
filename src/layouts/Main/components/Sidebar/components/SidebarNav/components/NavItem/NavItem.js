@@ -13,11 +13,13 @@ import Typography from '@mui/material/Typography';
 const NavItem = ({ title, items }) => {
   const theme = useTheme();
   const [activeLink, setActiveLink] = useState('');
+
   useEffect(() => {
     setActiveLink(window && window.location ? window.location.pathname : '');
   }, []);
 
-  const hasActiveLink = () => items.find((i) => i.href === activeLink);
+  // Fallback to an empty array if 'items' is undefined
+  const hasActiveLink = () => (items || []).find((i) => i.href === activeLink);
 
   return (
     <Box>
@@ -41,7 +43,7 @@ const NavItem = ({ title, items }) => {
         </AccordionSummary>
         <AccordionDetails sx={{ padding: 0 }}>
           <Grid container spacing={1}>
-            {items.map((p, i) => (
+            {(items || []).map((p, i) => (
               <Grid item key={i} xs={12}>
                 <Button
                   size={'large'}
@@ -92,6 +94,11 @@ NavItem.propTypes = {
   items: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
   onClose: PropTypes.func,
+};
+
+// Optionally, to be extra safe:
+NavItem.defaultProps = {
+  items: [],
 };
 
 export default NavItem;
