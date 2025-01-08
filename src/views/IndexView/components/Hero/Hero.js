@@ -146,7 +146,7 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                href={'/'}
               >
                 View pages
               </Button>
@@ -157,7 +157,7 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'https://thefront.maccarianagency.com/docs/introduction'}
+                  href={'/agency'}
                   target={'blank'}
                   variant="outlined"
                   color="primary"
