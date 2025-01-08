@@ -61,9 +61,7 @@ const Contact = () => {
           Contact details
         </Typography>
         <Typography color="text.secondary" align={'center'}>
-          Keep track of what's happening with your data, change permissions, and
-          run reports against your data anywhere in the world. Keep track of
-          what's happening with your data, change permissions.
+          If you have questions about our research, collaboration opportunities, or general inquiries, feel free to reach out to us using the details below.
         </Typography>
       </Box>
       <Box
