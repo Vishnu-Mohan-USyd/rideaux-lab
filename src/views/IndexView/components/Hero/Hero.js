@@ -146,9 +146,9 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/'}
+                href={'/agency'}
               >
-                View pages
+                View publications
               </Button>
               <Box
                 marginTop={{ xs: 2, sm: 0 }}
@@ -157,14 +157,14 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'/agency'}
+                  href={'/about-side-cover'}
                   target={'blank'}
                   variant="outlined"
                   color="primary"
                   size="large"
                   fullWidth={isMd ? false : true}
                 >
-                  Documentation
+                  The team
                 </Button>
               </Box>
             </Box>
