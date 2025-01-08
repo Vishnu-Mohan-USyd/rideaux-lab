@@ -50,6 +50,9 @@ const LatestNews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: isMd,
+    autoplay: true,
+    autoplaySpeed: 5000, // Changes slide every 5 seconds
+    pauseOnHover: true, // Pauses autoplay when hovering
   };
 
   return (
