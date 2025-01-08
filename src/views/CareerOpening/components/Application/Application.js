@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useTheme } from '@mui/material/styles';
@@ -39,6 +39,9 @@ const Application = () => {
     defaultMatches: true,
   });
 
+  // Reference to the form so we can pass it to emailjs.sendForm
+  const formRef = useRef(null);
+
   // Submission status for alerts
   const [submitStatus, setSubmitStatus] = useState({
     show: false,
@@ -46,7 +49,7 @@ const Application = () => {
     message: '',
   });
 
-  // Storing files in state
+  // Track chosen file names just to display them in the buttons
   const [files, setFiles] = useState({
     cv: null,
     coverLetter: null,
@@ -69,34 +72,10 @@ const Application = () => {
     }
   };
 
-  // -------------- Convert File to Base64 --------------
-  const convertFileToBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      if (!file) {
-        resolve('');
-        return;
-      }
-
-      // Limit set to 50 MB
-      if (file.size > 50 * 1024 * 1024) {
-        reject(new Error('File size must be less than 50MB'));
-        return;
-      }
-
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        // reader.result is a full data URL: "data:<MIME type>;base64,<encoded data>"
-        // We just need the base64 part if using EmailJS's built-in attachments approach
-        // but we can pass the entire data URL as well (with "data:...;base64,").
-        resolve(reader.result);
-      };
-      reader.onerror = (error) => reject(error);
-    });
-  };
-
   // -------------- OnSubmit Handler --------------
   const onSubmit = async (values, { resetForm }) => {
+    // We only call emailjs.sendForm if the form is valid
+    // (Formik handles validation for the text fields).
     try {
       setSubmitStatus({
         show: true,
@@ -104,54 +83,13 @@ const Application = () => {
         message: 'Sending application...',
       });
 
-      // Convert both files to Base64
-      let cvBase64 = '';
-      let coverLetterBase64 = '';
-
-      try {
-        cvBase64 = files.cv ? await convertFileToBase64(files.cv) : '';
-      } catch (error) {
-        setSubmitStatus({
-          show: true,
-          success: false,
-          message: `CV file error: ${error.message}`,
-        });
-        return;
-      }
-
-      try {
-        coverLetterBase64 = files.coverLetter
-          ? await convertFileToBase64(files.coverLetter)
-          : '';
-      } catch (error) {
-        setSubmitStatus({
-          show: true,
-          success: false,
-          message: `Cover letter file error: ${error.message}`,
-        });
-        return;
-      }
-
-      // ----------------------
-      // Build template params
-      // ----------------------
-      // 'cv_file' and 'cover_letter_file' should match the variables
-      // you set up in your EmailJS template.
-      const templateParams = {
-        to_email: 'your-email@example.com',  // Replace with your actual email
-        from_name: values.fullName,
-        from_email: values.email,
-        message: values.message,
-        // Pass entire data URLs for EmailJS to handle
-        cv_file: cvBase64,
-        cover_letter_file: coverLetterBase64,
-      };
-
-      // -------------- Send email using EmailJS --------------
-      const response = await emailjs.send(
-        'service_6q1p18j',  // Replace with your EmailJS service ID
-        'template_j2kjadd', // Replace with your EmailJS template ID
-        templateParams
+      // Send the form reference to EmailJS.
+      // MAKE SURE the input "name" attributes match your EmailJS template setup.
+      const response = await emailjs.sendForm(
+        'service_6q1p18j',    // Replace with your EmailJS service ID
+        'template_j2kjadd',  // Replace with your EmailJS template ID
+        formRef.current,     // The form reference
+        'tCN1dFcOBCtCrk491'  // Your public key (can omit if already set with emailjs.init)
       );
 
       if (response.status === 200) {
@@ -163,6 +101,7 @@ const Application = () => {
         resetForm();
         setFiles({ cv: null, coverLetter: null });
 
+        // Hide success alert after a few seconds
         setTimeout(() => {
           setSubmitStatus({ show: false, success: false, message: '' });
         }, 5000);
@@ -212,9 +151,17 @@ const Application = () => {
         </Typography>
       </Box>
 
+      {/*
+        NOTE: The main difference:
+        1) We add ref={formRef} to the Box so emailjs.sendForm can read it.
+        2) We keep formik.handleSubmit to handle field validation,
+           then call emailjs.sendForm inside onSubmit.
+      */}
       <Box
         component={'form'}
+        ref={formRef}
         onSubmit={formik.handleSubmit}
+        encType="multipart/form-data"
         sx={{
           '& .MuiOutlinedInput-root.MuiInputBase-multiline': {
             padding: 0,
@@ -300,11 +247,13 @@ const Application = () => {
               }
             >
               {files.cv ? files.cv.name : 'Upload CV'}
+              {/* Important: "name" must match the parameter in your EmailJS template attachments */}
               <input
                 type="file"
+                name="cv_file"
                 style={{ display: 'none' }}
-                onChange={handleFileChange('cv')}
                 accept=".pdf,.doc,.docx"
+                onChange={handleFileChange('cv')}
               />
             </Button>
           </Grid>
@@ -335,11 +284,13 @@ const Application = () => {
               }
             >
               {files.coverLetter ? files.coverLetter.name : 'Upload Cover Letter'}
+              {/* Must match the parameter in your EmailJS template attachments */}
               <input
                 type="file"
+                name="cover_letter_file"
                 style={{ display: 'none' }}
-                onChange={handleFileChange('coverLetter')}
                 accept=".pdf,.doc,.docx"
+                onChange={handleFileChange('coverLetter')}
               />
             </Button>
           </Grid>
