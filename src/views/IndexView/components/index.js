@@ -1,0 +1,12 @@
+export { default as Hero } from './Hero';
+export { default as Services } from './Services';
+export { default as QuickStart } from './QuickStart';
+export { default as Features } from './Features';
+export { default as Benefits } from './Benefits';
+export { default as GetStarted } from './GetStarted';
+export { default as Work } from './Work';
+export { default as CaseStudy1 } from './CaseStudy1';
+export { default as CaseStudy2 } from './CaseStudy2';
+export { default as CaseStudy3 } from './CaseStudy3';
+export { default as Courses } from './Courses';
+export { default as News } from './News';
