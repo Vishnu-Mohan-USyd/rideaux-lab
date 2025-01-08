@@ -10,7 +10,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const NavItem = ({ title, items }) => {
+const NavItem = ({ title, items, href, colorInvert = false }) => {
   const theme = useTheme();
   const [activeLink, setActiveLink] = useState('');
 
@@ -18,8 +18,35 @@ const NavItem = ({ title, items }) => {
     setActiveLink(window && window.location ? window.location.pathname : '');
   }, []);
 
-  // Fallback to an empty array if 'items' is undefined
-  const hasActiveLink = () => (items || []).find((i) => i.href === activeLink);
+  // If href is provided, render a single button
+  if (href) {
+    return (
+      <Button
+        size={'large'}
+        component={'a'}
+        href={href}
+        fullWidth
+        sx={{
+          justifyContent: 'flex-start',
+          color: colorInvert
+            ? 'common.white'
+            : activeLink === href
+              ? theme.palette.primary.main
+              : theme.palette.text.primary,
+          backgroundColor:
+            activeLink === href
+              ? alpha(theme.palette.primary.main, 0.1)
+              : 'transparent',
+          fontWeight: activeLink === href ? 600 : 400,
+        }}
+      >
+        {title}
+      </Button>
+    );
+  }
+
+  // Otherwise, render an accordion with items
+  const hasActiveLink = () => items?.find((i) => i.href === activeLink);
 
   return (
     <Box>
@@ -36,14 +63,20 @@ const NavItem = ({ title, items }) => {
         >
           <Typography
             fontWeight={hasActiveLink() ? 600 : 400}
-            color={hasActiveLink() ? 'primary' : 'text.primary'}
+            color={
+              colorInvert
+                ? 'common.white'
+                : hasActiveLink()
+                  ? 'primary'
+                  : 'text.primary'
+            }
           >
             {title}
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: 0 }}>
           <Grid container spacing={1}>
-            {(items || []).map((p, i) => (
+            {items?.map((p, i) => (
               <Grid item key={i} xs={12}>
                 <Button
                   size={'large'}
@@ -91,14 +124,15 @@ const NavItem = ({ title, items }) => {
 };
 
 NavItem.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.array,
   title: PropTypes.string.isRequired,
-  onClose: PropTypes.func,
+  href: PropTypes.string,
+  colorInvert: PropTypes.bool,
 };
 
-// Optionally, to be extra safe:
 NavItem.defaultProps = {
   items: [],
+  colorInvert: false,
 };
 
 export default NavItem;
