@@ -210,7 +210,7 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.1290259241277!2d151.18478947644078!3d-33.88633071996837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1d4d43ebb95%3A0x2af3154016b55f7b!2sGriffith%20Taylor%20Building!5e0!3m2!1sen!2sau!4v1736307036694!5m2!1sen!2sau"
         style={{
           minHeight: 300,
           filter:
