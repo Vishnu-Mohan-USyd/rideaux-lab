@@ -24,7 +24,7 @@ export const mock = [
   },
   {
     id: 'research-assistant-2024',  // Added unique identifier
-    title: 'Research Assistant',
+    title: 'Research Associate',
     location: 'Sydney',
     type: 'Full time',
     team: 'Dr Reuben Rideaux',
