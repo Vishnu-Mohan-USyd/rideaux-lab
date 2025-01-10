@@ -46,9 +46,9 @@ const CareerListing = () => {
         <Container maxWidth={1000}>
           <Jobs />
         </Container>
-        <Container paddingTop={'0 !important'}>
-          <Newsletter />
-        </Container>
+        {/*<Container paddingTop={'0 !important'}>*/}
+        {/*  <Newsletter />*/}
+        {/*</Container>*/}
         <Box
           component={'svg'}
           preserveAspectRatio="none"
