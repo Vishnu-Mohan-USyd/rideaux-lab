@@ -21,6 +21,14 @@ const Main = () => {
     defaultMatches: true,
   });
 
+  // We’ll store the Qualifications in an array to create fancy bullet points.
+  const qualifications = [
+    'Candidates with Ph.D. degrees in fields relevant to vision science are encouraged to apply.',
+    'Ideal candidates should be well-trained in psychophysical studies, experimental design, human behaviour data collection, and statistics.',
+    'Scientific writing skills are essential.',
+    'Experience with EEG and/or VR is not required but desirable.',
+  ];
+
   return (
     <Box>
       {/* Top Header and Action Buttons */}
@@ -64,14 +72,27 @@ const Main = () => {
               Summary
             </Typography>
             <Typography component={'p'}>
-              The overarching aim of this program of research is to better understand the
-              neural and behavioural correlates of perceptual and cognitive functions. We will
-              take a convergent approach to examining these functions by undertaking experiments
-              that use three different but complementary research methodologies:
-              <strong> (1) behavioural measurements,</strong>
-              <strong> (2) neural recordings,</strong>
-              and
-              <strong> (3) computational modelling.</strong>
+              Our perception of the world does not solely rely on what our eyes see. Our actions
+              play a crucial role in shaping how we perceive the world around us. Three of the most
+              frequent actions are eye movements (saccades), reaching/grasping, and walking. The
+              first two are well studied and known to influence perception. During saccades, for
+              example, vision is briefly lost ("saccadic suppression") and when reaching, our eye
+              gaze diverts to the target and away from other objects. Despite its fundamental role
+              in our daily lives, little is known about how walking influences perception.
+              <p />
+              This project combines multiple technologies (virtual reality, electroencephalography, eye
+              tracking, motion platform, artificial intelligence) to test dynamic perception in
+              free-walking observers in virtual multisensory environments. It will reveal how walking
+              modulates perception at the step rate, the influence of intention (active vs passive
+              action) and establish the neural mechanisms underlying the perception/action link.
+              <p />
+              Understanding the influence of walking on our perception holds the potential to improve
+              public safety and unlock myriad benefits in our daily lives. For example, the discovery
+              of saccadic suppression informed digital display design to improve user experiences
+              (e.g., exploiting saccadic masking, reduced motion blur.). The outcomes from this
+              project could be harnessed to inform public safety measures/policy and enhance the
+              efficiency of digital displays, communication systems, and device feedback mechanisms,
+              thereby enriching user experiences.
             </Typography>
           </Box>
 
@@ -104,9 +125,68 @@ const Main = () => {
               Additional information
             </Typography>
             <Typography component={'p'} sx={{ marginBottom: 1 }}>
-              <strong>Project keywords:</strong> neuroscience; psychology; perception; cognition; artificial
-              intelligence; AI; functional magnetic resonance imaging; fMRI; electroencephalography; EEG;
-              magnetic resonance spectroscopy; MRS; eye tracking
+              A full time 3-year fixed term postdoctoral position is open in the Lab of Dr.
+              Reuben Rideaux at the School of Psychology, University of Sydney, Australia. The
+              position is available immediately.
+            </Typography>
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              The selected candidate will work with Dr Rideaux and Prof David Alais on the project
+              “Seeing the world one step at a time”. This project combines multiple technologies
+              (virtual reality, electroencephalography, eye tracking, motion platform, artificial
+              intelligence) to test dynamic perception in free-walking healthy human observers in
+              virtual multisensory environments.
+            </Typography>
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              The School of Psychology consistently ranks among the best in the world. In the most
+              recent QS World University Rankings, the School ranked in the Top 3 Psychology
+              departments in Australia and the Top 30 in the world, with the University of Sydney
+              ranking in the Top 20 universities in the world.
+            </Typography>
+
+            {/* Qualifications header (unchanged) */}
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              <strong>Qualifications</strong>
+            </Typography>
+
+            {/* Replace the textual asterisks with bullet points */}
+            <Grid container spacing={1} sx={{ marginBottom: 2 }}>
+              {qualifications.map((item, idx) => (
+                <Grid item xs={12} key={idx}>
+                  <Box component={ListItem} disableGutters width={'auto'} padding={0}>
+                    <Box
+                      component={ListItemAvatar}
+                      minWidth={'auto !important'}
+                      marginRight={2}
+                    >
+                      <Box
+                        component={Avatar}
+                        bgcolor={theme.palette.secondary.main}
+                        sx={{ width: 20, height: 20 }}
+                      >
+                        <svg
+                          width={12}
+                          height={12}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </Box>
+                    </Box>
+                    <ListItemText primary={item} />
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              We welcome applicants with diverse backgrounds, regardless of nationality, gender,
+              orientation, or disability status.
             </Typography>
           </Box>
 
@@ -115,69 +195,26 @@ const Main = () => {
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Want to find out more?
             </Typography>
-            <Box component="ul" sx={{ listStyle: 'none', pl: 0 }}>
-              <Box component="li" sx={{ mb: 1 }}>
-                <Typography component="span">
-                  Interested in this opportunity? Want to know what to do next? Find out all you need
-                  to know about the{' '}
-                  <Link
-                    href="https://www.sydney.edu.au/study/how-to-apply/postgraduate-research.html"
-                    color="error"
-                  >
-                    application process
-                  </Link>{' '}
-                  including how to approach a potential supervisor and{' '}
-                  <Link
-                    href="https://www.sydney.edu.au/study/how-to-apply/postgraduate-research/how-to-write-a-research-proposal-for-a-strong-phd-application.html"
-                    color="error"
-                  >
-                    develop a research proposal
-                  </Link>.
-                </Typography>
-              </Box>
-              <Box component="li" sx={{ mb: 1 }}>
-                <Typography>
-                  Browse for other opportunities within the{' '}
-                  <Link
-                    href="http://sydney.edu.au/science/psychology/research/"
-                    color="error"
-                  >
-                    School of Psychology
-                  </Link>
-                  .
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography>
-                  Contact us to find out what's involved in applying for a PhD.{' '}
-                  <Link
-                    href="https://sydneyuni.service-now.com/sas?id=sc_cat_item_public&sys_id=185a07f6dbde2810379991a3e296199c&sysparm_rou_code=RPPHD&sysparm_student_type=Domestic&sysparm_category=Admission%20to%20the%20University"
-                    color="error"
-                  >
-                    Domestic students
-                  </Link>{' '}
-                  and{' '}
-                  <Link
-                    href="https://sydneyuni.service-now.com/sas?id=sc_cat_item_public&sys_id=185a07f6dbde2810379991a3e296199c&sysparm_rou_code=RPPHD&sysparm_student_type=International&sysparm_category=Admission%20to%20the%20University"
-                    color="error"
-                  >
-                    international students
-                  </Link>
-                  .
-                </Typography>
-              </Box>
-            </Box>
+            <Typography component={'p'}>
+              Interested in this opportunity? Want to know what to do next? Please submit inquiries
+              and applications to{' '}
+              <Link href="mailto:reuben.rideaux@sydney.edu.au" color="error">
+                reuben.rideaux@sydney.edu.au
+              </Link>.
+              <br />
+              Applications will be reviewed and considered until the position is filled.
+            </Typography>
           </Box>
 
           {/* Opportunity ID */}
-          <Box marginBottom={3}>
-            <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Opportunity ID
-            </Typography>
-            <Typography>
-              The opportunity ID for this research opportunity is 3316
-            </Typography>
-          </Box>
+          {/*<Box marginBottom={3}>*/}
+          {/*  <Typography variant={'h5'} fontWeight={700} gutterBottom>*/}
+          {/*    Opportunity ID*/}
+          {/*  </Typography>*/}
+          {/*  <Typography>*/}
+          {/*    The opportunity ID for this research opportunity is 3316*/}
+          {/*  </Typography>*/}
+          {/*</Box>*/}
 
           {/* Other Opportunities */}
           <Box>

@@ -125,14 +125,16 @@ const Hero = () => {
               color="text.secondary"
               sx={{ fontWeight: 400 }}
             >
-              Our lab investigates how the human brain transforms raw sensory input into
-              coherent perception. Using advanced neuroimaging and computational approaches,
-              we study the entire visual processing pipeline - from basic perception through
-              to memory formation and multisensory integration. We take particular interest
-              in challenging perceptual problems, like how the brain extracts motion from static
-              images and combines information across different senses. By examining these processes
-              at multiple levels, from neurochemistry to network dynamics, we aim to uncover the
-              fundamental principles that enable robust perception in biological systems.
+              Our lab combines computational
+              modelling, neuroimaging, and psychophysics, to study perception and
+              cognition.   Our   research   investigates   ‘canonical’   features   of   neural
+              processing, such as cue integration and adaptation, and how these fit
+              within current normative models of brain function, such as predictive
+              coding. We use a fundamentally multimodal approach to understand these
+              neural building blocks of information processing at the circuit level. We
+              also seek to develop new methods for understanding brain function and
+              dysfunction,   such   as   bio-inspired   artificial   intelligence   systems,   high
+              resolution functional MR spectroscopy, and neural decoding.
             </Typography>
             <Box
               display="flex"

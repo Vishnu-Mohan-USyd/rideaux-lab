@@ -16,7 +16,8 @@ const Contact = () => {
         color={'secondary'}
         align={'center'}
       >
-        Stay in touch
+        FOLLOW OUR
+        RESEARCH
       </Typography>
       <Typography fontWeight={700} variant={'h3'} gutterBottom align={'center'}>
         Stay updated with all of our work!
@@ -27,12 +28,12 @@ const Contact = () => {
         color={'text.secondary'}
         align={'center'}
       >
-        Subscribe to out mailing list and we'll let you know of any exciting new research, oppurtunities and more.
+        Follow us on google scholar to stay updated about our latest research.
       </Typography>
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button
           component={'a'}
-          href={'/contact-sidebar-map'}
+          href={'https://scholar.google.com.au/citations?user=YcarQiUAAAAJ&hl=en'}
           target={'_blank'}
           variant="contained"
           color="primary"
@@ -55,7 +56,7 @@ const Contact = () => {
             </svg>
           }
         >
-          Join now
+          Follow now
         </Button>
       </Box>
     </Box>

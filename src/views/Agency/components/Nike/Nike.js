@@ -16,60 +16,47 @@ const Nike = () => {
 
   const publications = [
     {
-      title: 'Neural tuning instantiates prior expectations in the human visual system (2023)',
-      authors: 'William J. Harrison, Paul M. Bays and Reuben Rideaux',
-      url: 'https://www.nature.com/articles/s41467-023-41027-w',
+      title: 'Task-related modulation of event-related potentials does not reflect changes to sensory representations (2024)',
+      authors: 'Reuben Rideaux',
+      url: 'https://doi.org/10.1162/imag_a_00266',
       description:
-        'Perception is often modelled as a process of active inference, whereby prior expectations are combined with noisy sensory measurements to estimate the structure of the world. This mathematical framework has proven critical to understanding perception, cognition, motor control, and social interaction...',
+        'Attention supports efficient perception by increasing the neural signals of targets while suppressing those of distractors. Decades of work studying the event-related potentials of electroencephalography (EEG) recordings have established our understanding of attention in the human brain, but many aspects of this phenomenon remain unknown...',
     },
     {
-      title: 'Distinct early and late neural mechanisms regulate feature-specific sensory adaptation in the human visual system (2023)',
-      authors: 'Reuben Rideaux, Rebecca K. West, Dragan Rangelov and Jason B. Mattingley',
-      url: 'https://doi.org/10.1073/pnas.2216192120',
+      title: 'Initial experiences with Direct Imaging of Neuronal Activity (DIANA) in humans (2023)',
+      authors: 'Shota Hodono, Reuben Rideaux, Timo van Kerkoerle, Martijn A. Cloos',
+      url: 'https://doi.org/10.1162/imag_a_00013',
       description:
-        'Sensory adaptation is widely assumed to reflect a form of efficient coding in the brain, but its underlying neural mechanisms are debated. On one account, sensitivity to prolonged or repeated input is reduced due to neuronal fatigue. Alternatively, adaptation might reflect sharpening of neuronal selectivity over time. To adjudicate between these accounts, we recorded whole-brain activity from human observers before and after they adapted to visual grating stimuli, and used inverted encoding to characterize multivariate changes in neural representations...',
+        'Functional MRI (fMRI) has been widely used to study activity patterns in the human brain. It infers neuronal activity from the associated hemodynamic response, which fundamentally limits its spatiotemporal specificity. In mice, the Direct Imaging of Neuronal Activity (DIANA) method revealed MRI signals that correlated with extracellular electric activity, showing high spatiotemporal specificity...',
     },
     {
-      title: 'Spatial structure, phase, and the contrast of natural images (2022)',
-      authors: 'Reuben Rideaux, Rebecca K. West, Thomas S. A. Wallis, Peter J. Bex, Jason B. Mattingley and William J. Harrison',
-      url: 'https://doi.org/10.1167/jov.22.1.4',
+      title: 'Comparison of seven modelling algorithms for γ-aminobutyric acid–edited proton magnetic resonance spectroscopy (2022)',
+      authors:
+        'Alexander R. Craven, Pallab K. Bhattacharyya, William T. Clarke, Ulrike Dydak, Richard A. E. Edden, Lars Ersland, Pravat K. Mandal, Mark Mikkelsen, James B. Murdoch, Jamie Near, Reuben Rideaux, Deepika Shukla, Min Wang, Martin Wilson, Helge J. Zöllner, Kenneth Hugdahl, Georg Oeltzschner',
+      url: 'https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/nbm.4702',
       description:
-        'The sensitivity of the human visual system is thought to be shaped by environmental statistics. A major endeavor in vision science, therefore, is to uncover the image statistics that predict perceptual and cognitive function. When searching for targets in natural images, for example, it has recently been proposed that target detection is inversely related to the spatial similarity of the target to its local background. We tested this hypothesis by measuring observers’ sensitivity to targets that were blended with natural image backgrounds...',
+        'Edited MRS sequences are widely used for studying γ-aminobutyric acid (GABA) in the human brain. Several algorithms are available for modelling these data, deriving metabolite concentration estimates through peak fitting or a linear combination of basis spectra. The present study compares seven such algorithms, using data obtained in a large multisite study...',
     },
     {
-      title: 'Adaptation to Binocular Anticorrelation Results in Increased Neural Excitability (2020)',
-      authors: 'Reuben Rideaux, Elizabeth Michael, Andrew E. Welchman',
-      url: 'https://doi.org/10.1162/jocn_a_01471',
+      title: 'Comparison of methods for spectral alignment and signal modelling of GABA-edited MR spectroscopy data (2021)',
+      authors: 'Reuben Rideaux, Mark Mikkelsen , Richard A.E. Edden',
+      url: 'https://doi.org/10.1016/j.neuroimage.2021.117900',
       description:
-        'Throughout the brain, information from individual sources converges onto higher order neurons. For example, information from the two eyes first converges in binocular neurons in area V1. Some neurons are tuned to similarities between sources of information, which makes intuitive sense in a system striving to match multiple sensory signals to a single external cause—that is, establish causal inference. However, there are also neurons that are tuned to dissimilar information...',
+        'Many methods exist for aligning and quantifying magnetic resonance spectroscopy (MRS) data to measure in vivo γ-aminobutyric acid (GABA). Research comparing the performance of these methods is scarce partly due to the lack of ground-truth measurements. The concentration of GABA is approximately two times higher in grey matter than in white matter. Here we use the proportion of grey matter within the MRS voxel as a proxy for ground-truth GABA...',
     },
     {
-      title: 'Contextual effects on binocular matching are evident in primary visual cortex (2019)',
+      title: 'Exploring and explaining properties of motion processing in biological brains using a neural network (2021)',
       authors: 'Reuben Rideaux and Andrew E. Welchman',
-      url: 'https://doi.org/10.1016/j.visres.2019.04.001',
+      url: 'https://doi.org/10.1167/jov.21.2.11',
       description:
-        'Global context can dramatically influence local visual perception. This phenomenon is well-documented for monocular features, e.g., the Kanizsa triangle. It has been demonstrated for binocular matching: the disambiguation of the Wallpaper Illusion via the luminance of the background. For monocular features, there is evidence that global context can influence neuronal responses as early as V1. However...',
+        'Visual motion perception underpins behaviors ranging from navigation to depth perception and grasping. Our limited access to biological systems constrains our understanding of how motion is processed within the brain. Here we explore properties of motion perception in biological systems by training a neural network to estimate the velocity of image sequences. The network recapitulates key characteristics of motion processing in biological brains, and we use our access to its structure to explore and understand motion (mis)perception...',
     },
     {
-      title: 'Border ownership-dependent tilt aftereffect for shape defined by binocular disparity and motion parallax (2019)',
-      authors: 'Reuben Rideaux and William J Harrison',
-      url: 'https://doi.org/10.1152/jn.00111.2019',
+      title: 'Low- and High-resolution Dynamic Analyses for Magnetic Resonance Spectroscopy Data (2021)',
+      authors: 'Reuben Rideaux',
+      url: 'https://doi.org/10.21769/BioProtoc.3892',
       description:
-        'Discerning objects from their surrounds (i.e., figure-ground segmentation) in a way that guides adaptive behaviors is a fundamental task of the brain. Neurophysiological work has revealed a class of cells in the macaque visual cortex that may be ideally suited to support this neural computation: border ownership cells (Zhou H, Friedman HS, von der Heydt R. J Neurosci 20: 6594-6611, 2000). These orientation-tuned cells appear to respond conditionally to the borders of objects. A behavioral correlate supporting the existence of these cells in humans was demonstrated with two-dimensional luminance-defined objects...',
-    },
-    {
-      title: 'Voluntary control of illusory contour formation (2019)',
-      authors: 'William J. Harrison and Reuben Rideaux',
-      url: 'https://link.springer.com/article/10.3758/s13414-019-01678-8',
-      description:
-        'The extent to which visual inference is shaped by attentional goals is unclear. Voluntary attention may simply modulate the priority with which information is accessed by the higher cognitive functions involved in perceptual decision making. Alternatively, voluntary attention may influence fundamental visual processes, such as those involved in segmenting an incoming retinal signal into a structured scene of coherent objects, thereby determining perceptual organization...',
-    },
-    {
-      title: 'Proscription supports robust perceptual integration by suppression in human visual cortex (2018)',
-      authors: 'Reuben Rideaux and Andrew E. Welchman',
-      url: 'https://www.nature.com/articles/s41467-018-03400-y',
-      description:
-        'Perception relies on integrating information within and between the senses, but how does the brain decide which pieces of information should be integrated and which kept separate? Here we demonstrate how proscription can be used to solve this problem: certain neurons respond best to unrealistic combinations of features to provide ‘what not’ information that drives suppression of unlikely perceptual interpretations...',
+        'Magnetic resonance spectroscopy (MRS) can be used to measure in vivo concentrations of neurometabolites. This information can be used to identify neurotransmitter involvement in healthy (e.g., perceptual and cognitive processes) and unhealthy brain function (e.g., neurological and psychiatric illnesses). The standard approach for analyzing MRS data is to combine spectral transients acquired over a ~10 min scan to yield a single estimate that reflects the average metabolite concentration during that period...',
     },
   ];
 
@@ -108,7 +95,8 @@ const Nike = () => {
               mt: 0,
             }}
           >
-            Visual Perception, Sensory Processing, and Adaptation
+            Computational,   MR   imaging/spectroscopy,   and   neural   decoding
+            methods development.
           </Typography>
           <Typography
             variant="h5"

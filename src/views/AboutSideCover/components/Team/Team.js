@@ -8,22 +8,20 @@ import CardContent from '@mui/material/CardContent';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from '@mui/material/Link';
 
 const mock = [
   {
     name: 'Reuben Rideaux',
-    title: 'Neuroscientist',
+    title: 'Group Leader',
     avatar: '/assets/Reuben.jpg',
     about: 'Dr Reuben Rideaux is a Senior Lecturer and NHMRC Emerging Leadership Fellow at the University of Sydney\'s School of Psychology, and an Honorary Senior Research Fellow at the Queensland Brain Institute',
     social: {
-      facebook: 'https://facebook.com/reuben.rideaux',
+      googleScholar: 'https://scholar.google.com/',
       github: 'https://reubenrideaux.github.io/',
-      twitter: 'https://x.com/reubenrideaux?lang=en'
-    }
+      bluesky: 'https://bsky.app/profile/reubenrideaux.bsky.social',
+    },
   },
   {
     name: 'Zak Buhmann',
@@ -31,10 +29,10 @@ const mock = [
     avatar: '/assets/Zak.png',
     about: 'My PhD explores audiovisual processing, and how our perception of one modality influences our perception of the other. The project aims to use forward modelling techniques on neural data to characterise this multisensory processing.',
     social: {
-      facebook: 'https://facebook.com/zak.buhmann',
+      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
       github: 'https://github.com/zakbuhmann',
-      twitter: 'https://twitter.com/zakbuhmann'
-    }
+      bluesky: 'https://bsky.app/profile/zakbuhmann.bsky.social', // Placeholder
+    },
   },
   {
     name: 'Immy Breen',
@@ -42,10 +40,10 @@ const mock = [
     avatar: '/assets/Immy.png',
     about: 'I am an ambitious workaholic, but apart from that, pretty simple person.',
     social: {
-      facebook: 'https://facebook.com/immy.breen',
+      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
       github: 'https://github.com/immybreen',
-      twitter: 'https://twitter.com/immybreen'
-    }
+      bluesky: 'https://bsky.app/profile/immybreen.bsky.social', // Placeholder
+    },
   },
   {
     name: 'Zoey Hu',
@@ -53,15 +51,16 @@ const mock = [
     avatar: '/assets/Zoey_2.png',
     about: 'I completed my Honours thesis in the lab, where I focused on predictive coding and multisensory integration, and I currently work as a Research Assistant. My research interests lie in understanding how the brain regulates perception, cognition, and motor responses to facilitate effective interaction with the world. I aim to explore the neural mechanisms driving these processes, contributing to a deeper understanding of human perception and cognition.',
     social: {
-      facebook: 'https://facebook.com/zoey.hu',
+      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
       github: 'https://github.com/zoeyhu',
-      twitter: 'https://twitter.com/zoeyhu'
-    }
+      bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
+    },
   },
 ];
 
 const Team = () => {
   const theme = useTheme();
+
   return (
     <Box>
       <Box marginBottom={4}>
@@ -97,7 +96,7 @@ const Team = () => {
                   '& .about-text': {
                     height: 'auto',
                     maxHeight: '300px',
-                  }
+                  },
                 },
               }}
             >
@@ -129,26 +128,53 @@ const Team = () => {
                         background: 'linear-gradient(transparent, white)',
                       },
                       '&:hover::after': {
-                        display: 'none'
-                      }
+                        display: 'none',
+                      },
                     }}
                   >
                     {item.about}
                   </Typography>
                   <Box marginTop={4}>
-                    <Link href={item.social.facebook} target="_blank" rel="noopener noreferrer">
+                    {/* Google Scholar Link (using custom SVG) */}
+                    <Link
+                      href={item.social.googleScholar}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <IconButton size={'small'} color={'primary'}>
-                        <FacebookIcon />
+                        <Box
+                          component="img"
+                          src="/assets/gscho.svg"
+                          alt="Google Scholar"
+                          sx={{ width: 24, height: 24 }}
+                        />
                       </IconButton>
                     </Link>
-                    <Link href={item.social.github} target="_blank" rel="noopener noreferrer">
+
+                    {/* GitHub Link */}
+                    <Link
+                      href={item.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <IconButton size={'small'} color={'primary'}>
                         <GitHubIcon />
                       </IconButton>
                     </Link>
-                    <Link href={item.social.twitter} target="_blank" rel="noopener noreferrer">
+
+                    {/* Bluesky Link (using custom SVG) */}
+                    <Link
+                      href={item.social.bluesky}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <IconButton size={'small'} color={'primary'}>
-                        <TwitterIcon />
+                        <Box
+                          component="img"
+                          src="/assets/bluesky_2.svg"
+                          alt="Bluesky"
+                          sx={{ width: 24, height: 24 }}
+                        />
                       </IconButton>
                     </Link>
                   </Box>

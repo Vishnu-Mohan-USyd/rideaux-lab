@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -32,29 +33,29 @@ const Story = () => {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
-            {[
-              '/assets/usyd_logo.svg',
-              '/assets/uq_logo.svg',
-              '/assets/arc_2.svg'
-            ].map((item, i) => (
-              <Box maxWidth={120} marginTop={2} marginRight={4} key={i}>
-                <Box
-                  component="img"
-                  height={1}
-                  width={1}
-                  src={item}
-                  alt="..."
-                  sx={{
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-              </Box>
-            ))}
-          </Box>
+          {/*<Box display="flex" flexWrap="wrap" justifyContent={'center'}>*/}
+          {/*  {[*/}
+          {/*    '/assets/usyd_logo.svg',*/}
+          {/*    '/assets/uq_logo.svg',*/}
+          {/*    '/assets/arc_2.svg'*/}
+          {/*  ].map((item, i) => (*/}
+          {/*    <Box maxWidth={120} marginTop={2} marginRight={4} key={i}>*/}
+          {/*      <Box*/}
+          {/*        component="img"*/}
+          {/*        height={1}*/}
+          {/*        width={1}*/}
+          {/*        src={item}*/}
+          {/*        alt="..."*/}
+          {/*        sx={{*/}
+          {/*          filter:*/}
+          {/*            theme.palette.mode === 'dark'*/}
+          {/*              ? 'brightness(0) invert(0.7)'*/}
+          {/*              : 'none',*/}
+          {/*        }}*/}
+          {/*      />*/}
+          {/*    </Box>*/}
+          {/*  ))}*/}
+          {/*</Box>*/}
         </Grid>
       </Grid>
     </Box>

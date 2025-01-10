@@ -324,9 +324,9 @@ const IndexView = () => {
           <Container>
             <News />
           </Container>
-          <Container>
-            <Courses />
-          </Container>
+          {/*<Container>*/}
+          {/*  <Courses />*/}
+          {/*</Container>*/}
           {/*<Container maxWidth={600}>*/}
           {/*  <QuickStart />*/}
           {/*</Container>*/}
@@ -358,9 +358,9 @@ const IndexView = () => {
           </Box>
         </Box>
 
-        <Container>
-          <GetStarted />
-        </Container>
+        {/*<Container>*/}
+        {/*  <GetStarted />*/}
+        {/*</Container>*/}
 
         {/* Scroll to Top Button */}
         {showScrollTop && (

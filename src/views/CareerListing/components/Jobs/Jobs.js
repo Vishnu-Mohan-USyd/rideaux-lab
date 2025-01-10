@@ -13,43 +13,58 @@ import Button from '@mui/material/Button';
 
 export const mock = [
   {
-    id: 'phd-researcher-2024',  // Added unique identifier
-    title: 'PhD Researcher',
+    id: 'phd-2024-1',
+    title: 'Fully-funded PhD Position',
     location: 'Sydney',
     type: 'Full time',
     team: 'Dr Reuben Rideaux',
     subtitle: 'Seeing the world one step at a time (3596)',
-    role: 'design',
-    applicationUrl: '/career-opening'  // Added application route
+    role: 'phd',
+    applicationUrl: '/career-opening',
+    isExternal: false
   },
   {
-    id: 'research-assistant-2024',  // Added unique identifier
-    title: 'Research Associate',
+    id: 'postdoc-2024-1',
+    title: 'Postdoctoral Researcher',
     location: 'Sydney',
     type: 'Full time',
     team: 'Dr Reuben Rideaux',
-    subtitle: 'Behavioural and neural investigations of human sensory and cognitive processes (3316)',
-    role: 'support',
-    applicationUrl: '/career-3316'  // Added application route
+    subtitle: 'Seeing the world one step at a time (3316)',
+    role: 'postdoc',
+    applicationUrl: '/career-3316',
+    isExternal: false
+  },
+  {
+    id: 'phd-2024-2',
+    title: 'PhD Position',
+    location: 'Sydney',
+    type: 'Full time',
+    team: 'Dr Reuben Rideaux',
+    subtitle: 'Behavioural and neural investigations of human sensory and cognitive processes',
+    role: 'phd',
+    applicationUrl: 'https://www.sydney.edu.au/research/opportunities/3316',
+    isExternal: true
   },
 ];
 
 const Jobs = () => {
   const theme = useTheme();
-  const navigate = useNavigate();  // Hook for navigation
+  const navigate = useNavigate();
 
-  // Add state for filters
   const [roleFilter, setRoleFilter] = useState('');
   const [teamFilter, setTeamFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState('');
 
-  // Handle job application with scroll to top
-  const handleApply = (applicationUrl) => {
-    window.scrollTo(0, 0);
-    navigate(applicationUrl);
+  // Updated handleApply to handle both internal and external URLs
+  const handleApply = (applicationUrl, isExternal) => {
+    if (isExternal) {
+      window.open(applicationUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      window.scrollTo(0, 0);
+      navigate(applicationUrl);
+    }
   };
 
-  // Filter jobs based on selected criteria
   const filteredJobs = useMemo(() => {
     return mock.filter(job => {
       const matchesRole = !roleFilter || job.role === roleFilter;
@@ -59,7 +74,6 @@ const Jobs = () => {
     });
   }, [roleFilter, teamFilter, locationFilter]);
 
-  // Handle filter changes
   const handleRoleChange = (event) => {
     setRoleFilter(event.target.value);
   };
@@ -109,8 +123,8 @@ const Jobs = () => {
               <MenuItem value="">
                 <em>All roles</em>
               </MenuItem>
-              <MenuItem value={'design'}>PhD Researcher</MenuItem>
-              <MenuItem value={'engineering'}>Engineering</MenuItem>
+              <MenuItem value={'design'}>PhD</MenuItem>
+              <MenuItem value={'engineering'}>Postdoc</MenuItem>
               <MenuItem value={'product'}>Internships</MenuItem>
               <MenuItem value={'support'}>Research Assistant</MenuItem>
             </Select>
@@ -226,7 +240,7 @@ const Jobs = () => {
                   variant="outlined"
                   color="primary"
                   size="small"
-                  onClick={() => handleApply(item.applicationUrl)}
+                  onClick={() => handleApply(item.applicationUrl, item.isExternal)}
                   endIcon={
                     <Box
                       component={'svg'}
@@ -244,7 +258,7 @@ const Jobs = () => {
                     </Box>
                   }
                 >
-                  Apply
+                  Enquire
                 </Button>
               </Box>
             </Box>

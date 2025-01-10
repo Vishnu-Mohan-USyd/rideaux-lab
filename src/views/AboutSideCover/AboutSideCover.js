@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -16,9 +17,9 @@ const AboutSideCover = () => {
         <Container paddingY={'0 !important'}>
           <Gallery />
         </Container>
-        <Container maxWidth={'800px !important'}>
-          <Numbers />
-        </Container>
+        {/*<Container maxWidth={'800px !important'}>*/}
+        {/*  <Numbers />*/}
+        {/*</Container>*/}
         <Container maxWidth={'800px !important'}>
           <Divider />
         </Container>

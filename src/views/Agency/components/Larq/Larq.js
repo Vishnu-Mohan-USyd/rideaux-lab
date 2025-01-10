@@ -24,11 +24,11 @@ const Larq = () => {
         'Methods of cognitive enhancement for humans are most impactful when they generalize across tasks. However, the extent to which such “transfer” is possible via interventions is widely debated. In addition, the contribution of excitatory and inhibitory processes to such transfer is unknown. Here, in a large-scale neuroimaging individual differences study with humans (both sexes), we paired...',
     },
     {
-      title: 'Neurochemical and functional interactions for improved perceptual decisions through training (2022)',
-      authors: 'Ke Jia, Polytimi Frangou, Vasilis M. Karlaftis, Joseph J. Ziminski, Joseph Giorgio, Reuben Rideaux, Elisa Zamboni, Victoria Hodgson, Uzay Emir and Zoe Kourtzi',
-      url: 'https://journals.physiology.org/doi/full/10.1152/jn.00308.2021?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org',
+      title: 'Individual Differences in Decision Strategy Relate to Neurochemical Excitability and Cortical Thickness (2023)',
+      authors: 'Hannah L. Filmer, Kathleen Loughnan, Jennifer X. Seeto, Timothy Ballard, Shane E. Ehrhardt, Thomas B. Shaw, Yohan Wards, Reuben Rideaux, Li-Ann Leow, David K. Sewell and Paul E. Dux',
+      url: 'https://www.jneurosci.org/content/43/42/7006.long',
       description:
-        'Learning and experience are known to improve our ability to make perceptual decisions. Yet, our understanding of the brain mechanisms that support improved perceptual decisions through training remains limited. Here, we test the neurochemical and functional interactions that support learning for perceptual decisions in the context of an orientation identification task...',
+        'The speed-accuracy trade-off (SAT), whereby faster decisions increase the likelihood of an error, reflects a cognitive strategy humans must engage in during the performance of almost all daily tasks. To date, computational modeling has implicated the latent decision variable of response caution (thresholds), the amount of evidence required for a decision to be made, in the SAT...',
     },
     {
       title: 'On the relationship between GABA+ and glutamate across the brain (2022)',
@@ -36,6 +36,13 @@ const Larq = () => {
       url: 'https://www.sciencedirect.com/science/article/pii/S1053811922003949?via%3Dihub',
       description:
         'Equilibrium between excitation and inhibition (E/I balance) is key to healthy brain function. Conversely, disruption of normal E/I balance has been implicated in a range of central neurological pathologies. Magnetic resonance spectroscopy (MRS) provides a non-invasive means of quantifying in vivo concentrations of excitatory and inhibitory neurotransmitters, which could be used as diagnostic biomarkers...',
+    },
+    {
+      title: 'Neurochemical and functional interactions for improved perceptual decisions through training (2022)',
+      authors: 'Ke Jia, Polytimi Frangou, Vasilis M. Karlaftis, Joseph J. Ziminski, Joseph Giorgio, Reuben Rideaux, Elisa Zamboni, Victoria Hodgson, Uzay Emir and Zoe Kourtzi',
+      url: 'https://journals.physiology.org/doi/full/10.1152/jn.00308.2021?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org',
+      description:
+        'Learning and experience are known to improve our ability to make perceptual decisions. Yet, our understanding of the brain mechanisms that support improved perceptual decisions through training remains limited. Here, we test the neurochemical and functional interactions that support learning for perceptual decisions in the context of an orientation identification task...',
     },
     {
       title: 'No balance between glutamate+glutamine and GABA+ in visual or motor cortices of the human brain: A magnetic resonance spectroscopy study (2021)',
@@ -57,6 +64,13 @@ const Larq = () => {
       url: 'https://doi.org/10.1152/jn.00208.2019',
       description:
         'The offset between images projected onto the left and right retina (binocular disparity) provides a powerful cue to the three-dimensional structure of the environment. It was previously shown that depth judgements are better when images comprise both light and dark features, rather than only light or only dark elements. Since Harris and Parker (Nature 374: 808–811, 1995) discovered the “mixed-polarity benefit,”...',
+    },
+    {
+      title: 'Proscription supports robust perceptual integration by suppression in human visual cortex (2018)',
+      authors: 'Reuben Rideaux and Andrew E. Welchman',
+      url: 'https://www.nature.com/articles/s41467-018-03400-y',
+      description:
+        'Perception relies on integrating information within and between the senses, but how does the brain decide which pieces of information should be integrated and which kept separate? Here we demonstrate how proscription can be used to solve this problem: certain neurons respond best to unrealistic combinations of features to provide ‘what not’ information that drives suppression of unlikely perceptual interpretations...',
     },
   ];
 
@@ -95,7 +109,7 @@ const Larq = () => {
               mt: 0,
             }}
           >
-            Neurochemistry (GABA, Glutamate) and Spectroscopy in Relation to Brain Function
+            Relationships between neurochemistry, cognition, and behaviour.
           </Typography>
           <Typography
             variant="h5"

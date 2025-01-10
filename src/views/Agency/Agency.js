@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -113,40 +114,40 @@ const Agency = () => {
           <Larq />
         </Container>
       </Box>
-      <Box minHeight={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'alternate.main'}>
-        <Container>
-          <Process />
-        </Container>
-      </Box>
+      {/*<Box minHeight={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'alternate.main'}>*/}
+      {/*  <Container>*/}
+      {/*    <Process />*/}
+      {/*  </Container>*/}
+      {/*</Box>*/}
       <Box id="adaptation" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
         <Box className={'jarallax-img'} sx={styles('/assets/perception.jpeg')} />
         <Container>
           <Nike />
         </Container>
       </Box>
-      <Box id="motion" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
-        <Box className={'jarallax-img'} sx={styles('/assets/motion.jpeg')} />
-        <Container>
-          <Trek />
-        </Container>
-      </Box>
+      {/*<Box id="motion" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>*/}
+      {/*  <Box className={'jarallax-img'} sx={styles('/assets/motion.jpeg')} />*/}
+      {/*  <Container>*/}
+      {/*    <Trek />*/}
+      {/*  </Container>*/}
+      {/*</Box>*/}
       <Box minHeight={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'alternate.main'}>
         <Container>
           <GrantsDisplay />
         </Container>
       </Box>
-      <Box id="av" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
-        <Box className={'jarallax-img'} sx={styles('/assets/av.jpeg')} />
-        <Container>
-          <Curology />
-        </Container>
-      </Box>
-      <Box id="cogsci" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
-        <Box className={'jarallax-img'} sx={styles('/assets/cogn_2.jpeg')} />
-        <Container>
-          <Nike2 />
-        </Container>
-      </Box>
+      {/*<Box id="av" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>*/}
+      {/*  <Box className={'jarallax-img'} sx={styles('/assets/av.jpeg')} />*/}
+      {/*  <Container>*/}
+      {/*    <Curology />*/}
+      {/*  </Container>*/}
+      {/*</Box>*/}
+      {/*<Box id="cogsci" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>*/}
+      {/*  <Box className={'jarallax-img'} sx={styles('/assets/cogn_2.jpeg')} />*/}
+      {/*  <Container>*/}
+      {/*    <Nike2 />*/}
+      {/*  </Container>*/}
+      {/*</Box>*/}
       <Box minHeight={'100vh'} display={'flex'} alignItems={'center'} bgcolor={'alternate.main'}>
         <Container>
           <Contact />

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -18,7 +19,8 @@ const Welcome = () => {
           fontWeight: 900,
         }}
       >
-        From Neurochemical Insights to Perceptual Dynamics: Pushing the Boundaries of Neuroscience Research
+        From action potentials to perception and action:
+        Pushing the boundaries of Neuroscience research
       </Typography>
       <Typography
         variant="h6"
@@ -29,7 +31,21 @@ const Welcome = () => {
           fontWeight: 400,
         }}
       >
-        We study how the brain processes visual information and makes decisions, using advanced imaging and spectroscopy to examine neural activity and chemistry, from basic sensory processing to complex learning behaviors
+        We study the building blocks of sensory and
+        cognitive neural processing within the context of normative models of
+        brain function that emphasize efficient coding, and their role in neural
+        dysfuction.
+      </Typography>
+      <Typography
+        variant="heading3"
+        component="p"
+        align={'center'}
+        sx={{
+          fontStyle: 'italic',
+          mt: 2
+        }}
+      >
+        We were born too late to explore earth and too early to explore space, but we were born at just the right time to explore the brain.
       </Typography>
     </Box>
   );
@@ -74,14 +90,14 @@ const Welcome = () => {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Box
-            width="100%"
-            height="100%"
-            display="flex"
-            justifyContent={'center'}
-          >
-            <GridItemPartnersBlock />
-          </Box>
+          {/*<Box*/}
+          {/*  width="100%"*/}
+          {/*  height="100%"*/}
+          {/*  display="flex"*/}
+          {/*  justifyContent={'center'}*/}
+          {/*>*/}
+          {/*  <GridItemPartnersBlock />*/}
+          {/*</Box>*/}
         </Grid>
       </Grid>
     </Box>

@@ -17,33 +17,130 @@ const Goby = () => {
   // Example publication data
   const publications = [
     {
-      title: 'Initial experiences with Direct Imaging of Neuronal Activity (DIANA) in humans (2023)',
-      authors: 'Shota Hodono, Reuben Rideaux, Timo van Kerkoerle, Martijn A. Cloos',
-      url: 'https://doi.org/10.1162/imag_a_00013',
+      title: 'Inverted encoding of neural responses to audiovisual stimuli reveals super-additive multisensory enhancement (2024)',
+      authors: 'Zak Buhmann, Amanda K Robinson, Jason B Mattingley and Reuben Rideaux',
+      url: 'https://doi.org/10.7554/eLife.97230.2',
       description:
-        'Functional MRI (fMRI) has been widely used to study activity patterns in the human brain. It infers neuronal activity from the associated hemodynamic response, which fundamentally limits its spatiotemporal specificity. In mice, the Direct Imaging of Neuronal Activity (DIANA) method revealed MRI signals that correlated with extracellular electric activity, showing high spatiotemporal specificity...',
+        'A central challenge for the brain is how to combine separate sources of information from different sensory modalities to optimally represent objects and events in the external world, such as combining someone’s speech and lip movements to better understand them in a noisy environment. At the level of individual neurons, audiovisual stimuli often elicit super-additive interactions, where the neural response is greater than the sum of auditory and visual responses. However...',
     },
     {
-      title: 'Comparison of seven modelling algorithms for γ-aminobutyric acid–edited proton magnetic resonance spectroscopy (2022)',
-      authors:
-        'Alexander R. Craven, Pallab K. Bhattacharyya, William T. Clarke, Ulrike Dydak, Richard A. E. Edden, Lars Ersland, Pravat K. Mandal, Mark Mikkelsen, James B. Murdoch, Jamie Near, Reuben Rideaux, Deepika Shukla, Min Wang, Martin Wilson, Helge J. Zöllner, Kenneth Hugdahl, Georg Oeltzschner',
+      title: 'Neural tuning instantiates prior expectations in the human visual system (2023)',
+      authors: 'William J. Harrison, Paul M. Bays and Reuben Rideaux',
+      url: 'https://www.nature.com/articles/s41467-023-41027-w',
+      description:
+        'Perception is often modelled as a process of active inference, whereby prior expectations are combined with noisy sensory measurements to estimate the structure of the world. This mathematical framework has proven critical to understanding perception, cognition, motor control, and social interaction...',
+    },
+    {
+      title: 'Distinct early and late neural mechanisms regulate feature-specific sensory adaptation in the human visual system (2023)',
+      authors: 'Reuben Rideaux, Rebecca K. West, Dragan Rangelov and Jason B. Mattingley',
+      url: 'https://doi.org/10.1073/pnas.2216192120',
+      description:
+        'Sensory adaptation is widely assumed to reflect a form of efficient coding in the brain, but its underlying neural mechanisms are debated. On one account, sensitivity to prolonged or repeated input is reduced due to neuronal fatigue. Alternatively, adaptation might reflect sharpening of neuronal selectivity over time. To adjudicate between these accounts, we recorded whole-brain activity from human observers before and after they adapted to visual grating stimuli, and used inverted encoding to characterize multivariate changes in neural representations...',
+    },
+    {
+      title: 'Spatial structure, phase, and the contrast of natural images (2022)',
+      authors: 'Reuben Rideaux, Rebecca K. West, Thomas S. A. Wallis, Peter J. Bex, Jason B. Mattingley and William J. Harrison',
+      url: 'https://doi.org/10.1167/jov.22.1.4',
+      description:
+        'The sensitivity of the human visual system is thought to be shaped by environmental statistics. A major endeavor in vision science, therefore, is to uncover the image statistics that predict perceptual and cognitive function. When searching for targets in natural images, for example, it has recently been proposed that target detection is inversely related to the spatial similarity of the target to its local background. We tested this hypothesis by measuring observers’ sensitivity to targets that were blended with natural image backgrounds...',
+    },
+    {
+      title: 'How multisensory neurons solve causal inference (2021)',
+      authors: 'Reuben Rideaux, Katherine R. Storrs, Guido Maiello and Andrew E. Welchman',
+      url: 'https://doi.org/10.1073/pnas.2106235118',
+      description:
+        'Sitting in a static railway carriage can produce illusory self-motion if the train on an adjoining track moves off. While our visual system registers motion, vestibular signals indicate that we are stationary. The brain is faced with a difficult challenge: is there a single cause of sensations (I am moving) or two causes (I am static, another train is moving)? If a single cause, integrating signals produces a more precise estimate of self-motion, but if not, one cue should be ignored. In many cases, this process of causal inference works without error, but how does the brain achieve it?...',
+    },
+    {
+      title: 'Functional Interactions between Sensory and Memory Networks for Adaptive Behavior (2021)',
+      authors: 'Vasilis M Karlaftis, Joseph Giorgio, Elisa Zamboni, Polytimi Frangou, Reuben Rideaux, Joseph J Ziminski and Zoe Kourtzi',
+      url: 'https://doi.org/10.1093/cercor/bhab160',
+      description:
+        'The brain\'s capacity to adapt to sensory inputs is key for processing sensory information efficiently and interacting in new environments. Following repeated exposure to the same sensory input, brain activity in sensory areas is known to decrease as inputs become familiar, a process known as adaptation. Yet, the brain-wide mechanisms that mediate adaptive processing remain largely unknown. Here, we combine multimodal brain imaging (functional magnetic resonance imaging [fMRI], magnetic resonance spectroscopy) with behavioral measures...',
+    },
+    {
+      title: 'Fine-scale computations for adaptive processing in the human brain (2020)',
+      authors: 'Elisa Zamboni, Valentin G Kemper, Nuno Reis Goncalves, Ke JiaVasilis M Karlaftis, Samuel J Bell, Joseph Giorgio, Reuben Rideaux, Rainer Goebel, Zoe Kourtzi',
       url: 'https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/nbm.4702',
       description:
-        'Edited MRS sequences are widely used for studying γ-aminobutyric acid (GABA) in the human brain. Several algorithms are available for modelling these data, deriving metabolite concentration estimates through peak fitting or a linear combination of basis spectra. The present study compares seven such algorithms, using data obtained in a large multisite study...',
+        'Adapting to the environment statistics by reducing brain responses to repetitive sensory information is key for efficient information processing. Yet, the fine-scale computations that support this adaptive processing in the human brain remain largely unknown. Here, we capitalise on the sub-millimetre resolution of ultra-high field imaging to examine functional magnetic resonance imaging signals across cortical depth and discern competing hypotheses about the brain mechanisms (feedforward vs. feedback) that mediate adaptive processing...',
     },
     {
-      title: 'Comparison of methods for spectral alignment and signal modelling of GABA-edited MR spectroscopy data (2021)',
-      authors: 'Reuben Rideaux, Mark Mikkelsen , Richard A.E. Edden',
-      url: 'https://doi.org/10.1016/j.neuroimage.2021.117900',
+      title: 'But Still It Moves: Static Image Statistics Underlie How We See Motion (2020)',
+      authors: 'Reuben Rideaux and Andrew E. Welchman',
+      url: 'https://doi.org/10.1523/JNEUROSCI.2760-19.2020',
       description:
-        'Many methods exist for aligning and quantifying magnetic resonance spectroscopy (MRS) data to measure in vivo γ-aminobutyric acid (GABA). Research comparing the performance of these methods is scarce partly due to the lack of ground-truth measurements. The concentration of GABA is approximately two times higher in grey matter than in white matter. Here we use the proportion of grey matter within the MRS voxel as a proxy for ground-truth GABA...',
+        'Seeing movement promotes survival. It results from an uncertain interplay between evolution and experience, making it hard to isolate the drivers of computational architectures found in brains. Here we seek insight into motion perception using a neural network (MotionNet) trained on moving images to classify velocity. The network recapitulates key properties of motion direction and speed processing in biological brains, and we use it to derive, and test, understanding of motion (mis)perception at the computational, neural, and perceptual levels...',
     },
     {
-      title: 'Low- and High-resolution Dynamic Analyses for Magnetic Resonance Spectroscopy Data (2021)',
-      authors: 'Reuben Rideaux',
-      url: 'https://doi.org/10.21769/BioProtoc.3892',
+      title: 'Adaptation to Binocular Anticorrelation Results in Increased Neural Excitability (2020)',
+      authors: 'Reuben Rideaux, Elizabeth Michael, Andrew E. Welchman',
+      url: 'https://doi.org/10.1162/jocn_a_01471',
       description:
-        'Magnetic resonance spectroscopy (MRS) can be used to measure in vivo concentrations of neurometabolites. This information can be used to identify neurotransmitter involvement in healthy (e.g., perceptual and cognitive processes) and unhealthy brain function (e.g., neurological and psychiatric illnesses). The standard approach for analyzing MRS data is to combine spectral transients acquired over a ~10 min scan to yield a single estimate that reflects the average metabolite concentration during that period...',
+        'Throughout the brain, information from individual sources converges onto higher order neurons. For example, information from the two eyes first converges in binocular neurons in area V1. Some neurons are tuned to similarities between sources of information, which makes intuitive sense in a system striving to match multiple sensory signals to a single external cause—that is, establish causal inference. However, there are also neurons that are tuned to dissimilar information...',
+    },
+    {
+      title: 'Contextual effects on binocular matching are evident in primary visual cortex (2019)',
+      authors: 'Reuben Rideaux and Andrew E. Welchman',
+      url: 'https://doi.org/10.1016/j.visres.2019.04.001',
+      description:
+        'Global context can dramatically influence local visual perception. This phenomenon is well-documented for monocular features, e.g., the Kanizsa triangle. It has been demonstrated for binocular matching: the disambiguation of the Wallpaper Illusion via the luminance of the background. For monocular features, there is evidence that global context can influence neuronal responses as early as V1. However...',
+    },
+    {
+      title: 'Border ownership-dependent tilt aftereffect for shape defined by binocular disparity and motion parallax (2019)',
+      authors: 'Reuben Rideaux and William J Harrison',
+      url: 'https://doi.org/10.1152/jn.00111.2019',
+      description:
+        'Discerning objects from their surrounds (i.e., figure-ground segmentation) in a way that guides adaptive behaviors is a fundamental task of the brain. Neurophysiological work has revealed a class of cells in the macaque visual cortex that may be ideally suited to support this neural computation: border ownership cells (Zhou H, Friedman HS, von der Heydt R. J Neurosci 20: 6594-6611, 2000). These orientation-tuned cells appear to respond conditionally to the borders of objects. A behavioral correlate supporting the existence of these cells in humans was demonstrated with two-dimensional luminance-defined objects...',
+    },
+    {
+      title: 'Voluntary control of illusory contour formation (2019)',
+      authors: 'William J. Harrison and Reuben Rideaux',
+      url: 'https://link.springer.com/article/10.3758/s13414-019-01678-8',
+      description:
+        'The extent to which visual inference is shaped by attentional goals is unclear. Voluntary attention may simply modulate the priority with which information is accessed by the higher cognitive functions involved in perceptual decision making. Alternatively, voluntary attention may influence fundamental visual processes, such as those involved in segmenting an incoming retinal signal into a structured scene of coherent objects, thereby determining perceptual organization...',
+    },
+    {
+      title: 'Parallel consolidation into visual working memory results in reduced precision representations (2018)',
+      authors: 'Reuben Rideaux, Emma Baker and Mark Edwards',
+      url: 'https://doi.org/10.1016/j.visres.2018.06.005',
+      description:
+        'Information can be consolidated into visual working memory in parallel, i.e. two items can be consolidated in the same time required to consolidate one. However, while motion direction items consolidated in parallel are encoded at a reduced precision, no such reduction has been reported for colour. Here we examine two possible explanations for the inconsistency between the phenomena associated with consolidating these features in parallel...',
+    },
+    {
+      title: 'Temporal synchrony is an effective cue for grouping and segmentation in the absence of form cues (2016)',
+      authors: 'Reuben Rideaux, David R. Badcock, Alan Johnston and Mark Edwards',
+      url: 'https://doi.org/10.1167/16.6.1',
+      description:
+        'The synchronous change of a feature across multiple discrete elements, i.e., temporal synchrony, has been shown to be a powerful cue for grouping and segmentation. This has been demonstrated with both static and dynamic stimuli for a range of tasks. However, in addition to temporal synchrony, stimuli in previous research have included other cues which can also facilitate grouping and segmentation, such as good continuation and coherent spatial configuration...',
+    },
+    {
+      title: 'The cost of parallel consolidation into visual working memory (2016)',
+      authors: 'Reuben Rideaux and Mark Edwards',
+      url: 'https://doi.org/10.1167/jov.21.2.11',
+      description:
+        'A growing body of evidence indicates that information can be consolidated into visual working memory in parallel. Initially, it was suggested that color information could be consolidated in parallel while orientation was strictly limited to serial consolidation (Liu & Becker, 2013). However, we recently found evidence suggesting that both orientation and motion direction items can be consolidated in parallel, with different levels of accuracy...',
+    },
+    {
+      title: 'Evidence for parallel consolidation of motion direction and orientation into visual short-term memory (2015)',
+      authors: 'Reuben Rideaux, Deborah Apthorp and Mark Edwards',
+      url: 'https://doi.org/10.1167/15.2.17',
+      description:
+        'Recent findings have indicated the capacity to consolidate multiple items into visual short-term memory in parallel varies as a function of the type of information. That is, while color can be consolidated in parallel, evidence suggests that orientation cannot. Here we investigated the capacity to consolidate multiple motion directions in parallel and reexamined this capacity using orientation. This was achieved by determining the shortest exposure duration necessary to consolidate a single item...',
+    },
+    {
+      title: 'Information extraction during simultaneous motion processing (2014)',
+      authors: 'Reuben Rideaux and Mark Edwards',
+      url: 'https://doi.org/10.1016/j.visres.2013.11.007',
+      description:
+        'When confronted with multiple moving objects the visual system can process them in two stages: an initial stage in which a limited number of signals are processed in parallel (i.e. simultaneously) followed by a sequential stage. We previously demonstrated that during the simultaneous stage, observers could discriminate between presentations containing up to 5 vs. 6 spatially localized motion signals (Edwards & Rideaux, 2013). Here we investigate what information is actually extracted during the simultaneous stage...',
+    },
+    {
+      title: 'How many motion signals can be simultaneously perceived? (2013)',
+      authors: 'Mark Edwards and Reuben Rideaux',
+      url: 'https://doi.org/10.1016/j.visres.2012.10.004',
+      description:
+        'Previous research indicates that the maximum number of motion signals that can be simultaneously perceived is 2, if they are defined only by direction differences, or 3 if they also differ in speed or depth (Greenwood & Edwards, 2006b). Those previous studies used transparent, spatially-sparse stimuli. Here we investigate this motion-number perception limit using spatially-localised stimuli that drive either the standard or form-specific motion systems (Edwards, 2009)...',
     },
   ];
 
@@ -82,7 +179,8 @@ const Goby = () => {
               mt: 0,
             }}
           >
-            Neural Imaging Methods and Data Analysis Approaches
+            Prioritization and integration of sensory information within and
+            between sensory modalities.
           </Typography>
           <Typography
             variant="h5"

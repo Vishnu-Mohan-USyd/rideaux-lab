@@ -20,20 +20,28 @@ const mock = [
     url: 'https://doi.org/10.1073/pnas.2106235118'
   },
   {
-    heading: 'But still it moves: static image statistics underlie how we see motion',
-    authors: 'Reuben Rideaux, Andrew E. Welchman',
+    heading: 'Neural tuning instantiates prior expectations in the human visual system',
+    authors: 'William J. Harrison, Paul M. Bays, Reuben Rideaux',
     newsTitle:
-      'Seeing movement promotes survival. It results from an uncertain interplay between evolution and experience, making it hard to isolate the drivers of computational architectures found in brains. Here we seek insight into motion perception using a neural network (MotionNet) trained on moving images...',
-    avatar: '/assets/mnet_4.png',
-    url: 'https://doi.org/10.1523/JNEUROSCI.2760-19.2020'
+      'Perception is often modelled as a process of active inference, whereby prior expectations are combined with noisy sensory measurements to estimate the structure of the world. This mathematical framework has proven critical to understanding perception, cognition, motor control, and social interaction. While theoretical work...',
+    avatar: '/assets/nti.jpg',
+    url: 'https://doi.org/10.1038/s41467-023-41027-w'
   },
   {
-    heading: 'No balance between glutamate+ glutamine and GABA+ in visual or motor cortices of the human brain',
-    authors: 'Reuben Rideaux',
+    heading: 'Proscription supports robust perceptual integration by suppression in human visual cortex',
+    authors: 'Reuben Rideaux, Andrew E. Welchman',
     newsTitle:
-      'Theoretical work, supported by electrophysiological evidence, asserts that a balance between excitation and inhibition (E/I) is critical for healthy brain function. In magnetic resonance spectroscopy (MRS) studies...',
-    avatar: '/assets/gaba_2.jpg',
-    url: 'https://doi.org/10.1016/j.neuroimage.2021.118191'
+      'Perception relies on integrating information within and between the senses, but how does the brain decide which pieces of information should be integrated and which kept separate? Here we demonstrate how proscription can be used to solve this problem: certain neurons respond best to...',
+    avatar: '/assets/proscrip.jpg',
+    url: 'https://doi.org/10.1038/s41467-018-03400-y'
+  },
+  {
+    heading: 'Inverted encoding of neural responses to audiovisual stimuli reveals super-additive multisensory enhancement',
+    authors: 'Zak Buhmann, Amanda K Robinson, Jason B Mattingley, Reuben Rideaux',
+    newsTitle:
+      'A central challenge for the brain is how to combine separate sources of information from different sensory modalities to optimally represent objects and events in the external world, such as combining someone’s speech and lip movements to better understand them in a noisy environment...',
+    avatar: '/assets/invert.jpg',
+    url: 'https://doi.org/10.7554/eLife.97230.2.sa3'
   },
 ];
 
@@ -51,8 +59,8 @@ const LatestNews = () => {
     slidesToScroll: 1,
     arrows: isMd,
     autoplay: true,
-    autoplaySpeed: 5000, // Changes slide every 5 seconds
-    pauseOnHover: true, // Pauses autoplay when hovering
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
   };
 
   return (
@@ -99,7 +107,8 @@ const LatestNews = () => {
               marginTop: theme.spacing(1),
             }}
           >
-            A few key findings we've pioneered over the last decade
+            A selection of studies from each
+            of the three research streams
           </Typography>
           <Typography
             variant="h6"
@@ -107,19 +116,7 @@ const LatestNews = () => {
             color={'text.secondary'}
             data-aos={'fade-up'}
           >
-            We investigate how the brain constructs our perception of the world using both computational and biological approaches…
           </Typography>
-          <Box display="flex" justifyContent={'center'} marginTop={2}>
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              component={Link}
-              to="/agency"
-            >
-              View all publications
-            </Button>
-          </Box>
         </Box>
         <Box
           sx={{
@@ -246,6 +243,17 @@ const LatestNews = () => {
               </Box>
             ))}
           </Slider>
+        </Box>
+        <Box display="flex" justifyContent={'center'} marginTop={4}>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            component={Link}
+            to="/agency"
+          >
+            View all publications
+          </Button>
         </Box>
       </Box>
     </Box>

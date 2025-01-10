@@ -7,9 +7,11 @@ import { useTheme } from '@mui/material/styles';
 
 const mock = [
   {
-    title: 'Behavorial Experiments',
+    title: 'Behavioural and physiological recordings',
     description:
-      'We study how humans process and sometimes misperceive sensory information through carefully designed perceptual experiments. These studies examine complex situations like the "stationary train illusion" to understand how the brain handles conflicting sensory signals, revealing the fundamental rules governing perception.',
+      'We   measure   behavioural   performance   and\n' +
+      'physiological reactions, e.g., response time, accuracy, and pupil dilation, in\n' +
+      'response to different stimuli and task demands.',
     illustration:
       '/assets/eegframe.png',
     illustrationDark:
@@ -17,9 +19,11 @@ const mock = [
     maxWidth: '60%',  // Smaller size specifically for EEG frame
   },
   {
-    title: 'Advanced Brain Imaging',
+    title: 'Neural recordings',
     description:
-      'Using magnetic resonance spectroscopy and other advanced techniques, we map both the chemistry and neural activity patterns that enable perception. Our work has revealed how different brain regions maintain specialized chemical environments and employ distinct neural populations to process sensory information.',
+      'We   measure   neural   activity   using\n' +
+      'electroencephalography   and   magnetic   resonance   imaging   and\n' +
+      'spectroscopy while participants engage in different tasks.',
     illustration:
       '/assets/fmripng.png',
     illustrationDark:
@@ -28,13 +32,16 @@ const mock = [
   },
   {
     label: 'Client portal access',
-    title: 'Computational Modeling',
+    title: 'Computational modelling',
     description:
-      'We develop artificial neural networks that help explain why the brain is organized as it is. By training these models on natural images, we show how many properties of biological perception emerge naturally from environmental statistics rather than requiring specialized neural architectures.',
+      'We build, train, and interrogate biologically\n' +
+      'inspired artificial neural networks, e.g., using in silico electrophysiology\n' +
+      'and artificial lesions, to understand aspects of brain function that are\n' +
+      'unreachable using the tools currently available to study biological systems.',
     illustration:
-      '/assets/cnnframe.png',
+      '/assets/ann_2.svg',
     illustrationDark:
-      '/assets/cnnframe_dark.png',
+      '/assets/ann_2.svg',
     maxWidth: '90%',
   },
 ];
@@ -54,12 +61,14 @@ const Work = () => {
           color={'secondary'}
           align={'center'}
         >
-          Our work
+          RESEARCH STREAMS
         </Typography>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} align={'center'}>
-          How do we combine information from different senses? <br />
-          How does brain chemistry shape our ability to learn and adapt?<br />
-          How does the human brain transform visual information into perception?
+          Prioritization and integration of sensory information within and between
+          sensory modalities. <br />
+          Relationships between neurochemistry, cognition, and behaviour.<br />
+          Computational, MR imaging/spectroscopy, and neural decoding methods
+          development.
         </Typography>
         <Typography
           variant="h6"
@@ -67,10 +76,8 @@ const Work = () => {
           color="text.secondary"
           align={'center'}
         >
-          We attempt to answer these questions by investigating how the brain constructs our perception of the world through a unique combination of computational and biological approaches.
-          At the core of our work is understanding how the brain makes sense of ambiguous sensory information -
-          like when you're sitting in a stationary train and see another train move, creating an illusion of self-motion.
-          We utilize three powerful approaches:
+          To address research questions, we use a
+          multimodal approach that incorporates three types of methodology:
         </Typography>
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
         </Box>
