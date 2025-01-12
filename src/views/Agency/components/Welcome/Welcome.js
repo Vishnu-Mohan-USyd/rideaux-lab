@@ -19,7 +19,7 @@ const Welcome = () => {
           fontWeight: 900,
         }}
       >
-        From action potentials to perception and action:
+        From action potentials to perception and behaviour:
         Pushing the boundaries of Neuroscience research
       </Typography>
       <Typography
