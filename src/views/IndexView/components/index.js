@@ -5,6 +5,7 @@ export { default as Features } from './Features';
 export { default as Benefits } from './Benefits';
 export { default as GetStarted } from './GetStarted';
 export { default as Work } from './Work';
+export { default as Streams } from './Streams';
 export { default as CaseStudy1 } from './CaseStudy1';
 export { default as CaseStudy2 } from './CaseStudy2';
 export { default as CaseStudy3 } from './CaseStudy3';

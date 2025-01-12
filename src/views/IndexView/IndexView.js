@@ -9,6 +9,7 @@ import { ArrowLeft, ArrowRight, ChevronUp } from 'lucide-react';  // Added Chevr
 import {
   Hero,
   Work,
+  Streams,
   CaseStudy1,
   CaseStudy2,
   CaseStudy3,
@@ -118,6 +119,9 @@ const IndexView = () => {
       >
         {/* Hero Section */}
         <Hero />
+        <Container>
+          <Streams />
+        </Container>
 
         <Container>
           <Work />
