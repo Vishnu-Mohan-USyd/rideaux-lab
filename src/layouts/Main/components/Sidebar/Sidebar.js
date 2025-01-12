@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Drawer from '@mui/material/Drawer';
@@ -15,13 +16,16 @@ const Sidebar = ({ pages, open, variant, onClose }) => {
         '& .MuiPaper-root': {
           width: '100%',
           maxWidth: 280,
+          backgroundColor: 'background.paper',
         },
       }}
     >
       <Box
         sx={{
           height: '100%',
-          padding: 1,
+          padding: 2,
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
         <SidebarNav pages={pages} />
@@ -34,7 +38,7 @@ Sidebar.propTypes = {
   onClose: PropTypes.func,
   open: PropTypes.bool.isRequired,
   variant: PropTypes.string.isRequired,
-  pages: PropTypes.object.isRequired,
+  pages: PropTypes.object,
 };
 
 export default Sidebar;
