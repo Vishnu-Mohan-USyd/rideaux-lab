@@ -59,7 +59,7 @@ const mock = [
   {
     name: 'Vishnu Mohan',
     title: 'MPhil Researcher',
-    avatar: '/assets/vish.jpg',
+    avatar: '/assets/vish.JPG',
     about: 'I\'m doing my MPhil here. My research interests lie at the intersection of artificial intelligence and neuroscience.',
     social: {
       googleScholar: 'https://scholar.google.com/', // Replace with real link if available
