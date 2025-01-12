@@ -51,7 +51,7 @@ const mock = [
     avatar: '/assets/Zoey_2.png',
     about: 'I completed my Honours thesis in the lab, where I focused on predictive coding and multisensory integration, and I currently work as a Research Assistant. My research interests lie in understanding how the brain regulates perception, cognition, and motor responses to facilitate effective interaction with the world. I aim to explore the neural mechanisms driving these processes, contributing to a deeper understanding of human perception and cognition.',
     social: {
-      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
+      googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zoeyhu',
       bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
     },
@@ -62,7 +62,7 @@ const mock = [
     avatar: '/assets/vish.JPG',
     about: 'I\'m doing my MPhil here. My research interests lie at the intersection of artificial intelligence and neuroscience.',
     social: {
-      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
+      googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zoeyhu',
       bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
     },
