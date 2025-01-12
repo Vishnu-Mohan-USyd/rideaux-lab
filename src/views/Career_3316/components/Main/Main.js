@@ -40,7 +40,7 @@ const Main = () => {
       >
         <Box>
           <Typography fontWeight={700} variant={'h4'} gutterBottom>
-            Behavioural and neural investigations of human sensory and cognitive processes
+            Seeing the world one step at a time
           </Typography>
           <Typography variant={'h6'}>
             School of Psychology, The University of Sydney
@@ -48,17 +48,17 @@ const Main = () => {
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Button variant="contained" color="primary" size="large">
-            Apply now
+            Enquire Now
           </Button>
-          <Box
-            component={Button}
-            variant="outlined"
-            color="primary"
-            size="large"
-            marginLeft={2}
-          >
-            Refer a friend
-          </Box>
+          {/*<Box*/}
+          {/*  component={Button}*/}
+          {/*  variant="outlined"*/}
+          {/*  color="primary"*/}
+          {/*  size="large"*/}
+          {/*  marginLeft={2}*/}
+          {/*>*/}
+          {/*  Refer a friend*/}
+          {/*</Box>*/}
         </Box>
       </Box>
       <Divider sx={{ marginY: 4 }} />
@@ -97,27 +97,27 @@ const Main = () => {
           </Box>
 
           {/* Synopsis Section */}
-          <Box marginBottom={3}>
-            <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Synopsis
-            </Typography>
-            <Typography component={'p'}>
-              The human brain has a remarkable ability to perceive and process information, and
-              to co‐ordinate appropriate actions in the form of motor responses. Despite the enormous
-              strides that have been made in understanding human perceptual and cognitive processes
-              over the last 20 years, there are still many fundamental gaps in our understanding of how
-              the brain regulates the processes underlying our interaction with and perception of the
-              world. A central aim of the current project is to better understand how human perception
-              and cognition.
-            </Typography>
-            <Typography component={'p'} sx={{ marginTop: 2 }}>
-              We now have the capacity to image the brain using methods such as
-              electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) as people
-              undertake various perceptual, cognitive and motor tasks. This project will use different
-              techniques, alone and in combination, to better understand the neural processes that
-              underpin perception, cognition and motor control.
-            </Typography>
-          </Box>
+          {/*<Box marginBottom={3}>*/}
+          {/*  <Typography variant={'h5'} fontWeight={700} gutterBottom>*/}
+          {/*    Synopsis*/}
+          {/*  </Typography>*/}
+          {/*  <Typography component={'p'}>*/}
+          {/*    The human brain has a remarkable ability to perceive and process information, and*/}
+          {/*    to co‐ordinate appropriate actions in the form of motor responses. Despite the enormous*/}
+          {/*    strides that have been made in understanding human perceptual and cognitive processes*/}
+          {/*    over the last 20 years, there are still many fundamental gaps in our understanding of how*/}
+          {/*    the brain regulates the processes underlying our interaction with and perception of the*/}
+          {/*    world. A central aim of the current project is to better understand how human perception*/}
+          {/*    and cognition.*/}
+          {/*  </Typography>*/}
+          {/*  <Typography component={'p'} sx={{ marginTop: 2 }}>*/}
+          {/*    We now have the capacity to image the brain using methods such as*/}
+          {/*    electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) as people*/}
+          {/*    undertake various perceptual, cognitive and motor tasks. This project will use different*/}
+          {/*    techniques, alone and in combination, to better understand the neural processes that*/}
+          {/*    underpin perception, cognition and motor control.*/}
+          {/*  </Typography>*/}
+          {/*</Box>*/}
 
           {/* Additional Information Section */}
           <Box marginBottom={3}>

@@ -11,6 +11,7 @@ import {
   CareerListingMinimal as CareerListingMinimalView,
   CareerOpening as CareerOpeningView,
   Career3316 as Career3316,
+  Careerphd as Careerphd,
   ContactPage as ContactPageView,
   Coworking as CoworkingView,
   Elearning as ElearningView,
@@ -84,6 +85,10 @@ const routes = [
   {
     path: '/career-3316',
     renderer: (params = {}) => <Career3316 {...params} />,
+  },
+  {
+    path: '/career-phd',
+    renderer: (params = {}) => <Careerphd {...params} />,
   },
   {
     path: '/career-listing-minimal',

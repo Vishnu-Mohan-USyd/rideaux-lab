@@ -107,9 +107,7 @@ const Nike = () => {
               marginBottom: 0,
             }}
           >
-            These publications emphasize how the visual system processes or adapts to stimuli—
-            disparity, motion, natural image statistics, and illusions. They often employ
-            psychophysics, behavioral measures, or neuroimaging correlates of perception.
+            This research seeks to develop new methods, or improve existing methods, for studying the brain.
           </Typography>
         </Box>
       </Box>

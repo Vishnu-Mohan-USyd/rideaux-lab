@@ -120,9 +120,7 @@ const Larq = () => {
               marginBottom: 0,
             }}
           >
-            These papers use magnetic resonance spectroscopy (MRS) to explore how neurochemicals
-            (e.g., GABA, glutamate) in different brain regions are linked to perception, learning,
-            and other cognitive processes.
+            This research focuses on understanding the mechanistic role of neural metabolites, particularly GABA and glutamate, in perception, cognition, and action.
           </Typography>
         </Box>
       </Box>

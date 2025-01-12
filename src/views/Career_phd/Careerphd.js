@@ -5,7 +5,7 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Application, Main as MainSection, Newsletter } from './components';
 
-const Career3316 = () => {
+const Careerphd = () => {
   return (
     <Main>
       <Container>
@@ -23,4 +23,4 @@ const Career3316 = () => {
   );
 };
 
-export default Career3316;
+export default Careerphd;

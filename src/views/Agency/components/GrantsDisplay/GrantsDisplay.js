@@ -2,6 +2,7 @@
 import React from 'react';
 import {
   Box,
+  // eslint-disable-next-line no-unused-vars
   Typography,
   useTheme,
   Accordion,
@@ -23,51 +24,6 @@ const GrantsDisplay = () => {
       title: 'Measuring dietary biases using non-invasive decoding of brain activity',
       logo: '/assets/usyd_logo.svg',
       additionalInfo:
-        'This grant explores novel, non-invasive brain-imaging techniques to identify how dietary preferences are formed.',
-    },
-    {
-      id: 2,
-      dateRange: '2025-2028',
-      organization: 'Australian Research Council Discovery Project Grant',
-      title: 'Seeing the world one step at a time',
-      logo: '/assets/arc_1.svg',
-      additionalInfo:
-        'Investigating how incremental visual perception occurs in the human brain, focusing on ocular micro-movements.',
-    },
-    {
-      id: 3,
-      dateRange: '2024-2029',
-      organization: 'National Health and Medical Research Council Emerging Leader 1 Investigator Award',
-      title: 'Using artificial intelligence to understand impaired sensory processing in autism',
-      logo: '/assets/nhmrc_tran.png',
-      additionalInfo:
-        'Developing AI-driven models to detect subtle changes in sensory processing in individuals with autism spectrum disorder.',
-    },
-    {
-      id: 4,
-      dateRange: '2024-2027',
-      organization: 'Australian Research Council Discovery Project Grant',
-      title: 'Creating a non-invasive window into the mind',
-      logo: '/assets/arc_1.svg',
-      additionalInfo:
-        'Using portable EEG and advanced machine learning to decode mental states in real time.',
-    },
-    {
-      id: 5,
-      dateRange: '2021-2025',
-      organization: 'Australian Research Council Discovery Early Career Research Award',
-      title: 'Understanding how the brain combines sensory information',
-      logo: '/assets/arc_1.svg',
-      additionalInfo:
-        'Exploring the neural mechanisms of multisensory integration using cutting-edge imaging techniques.',
-    },
-    {
-      id: 6,
-      dateRange: '2018-2021',
-      organization: 'Leverhulme Trust Early Career Research Fellowship ',
-      title: 'Perceiving in depth: The intersection of minds and machines',
-      logo: '/assets/arc_1.svg',
-      additionalInfo:
         'Advances in non-invasive decoding of brain activity hold potential benefit\n' +
         'to   various   fields,   including   brain-computer   interfaces   (e.g.   to   control\n' +
         'assistive devices), fundamental and clinical neuroscience research (e.g. to\n' +
@@ -77,7 +33,15 @@ const GrantsDisplay = () => {
         'strategies). Unlike invasive techniques, progress in non-invasive methods\n' +
         'can be widely applied to achieve significant benefit across society. This\n' +
         'project   seeks   to   develop   methods   for   assessing   dietary   biases   using\n' +
-        'decoding of brain activity from electroencephalographical recordings.\n' +
+        'decoding of brain activity from electroencephalographical recordings.',
+    },
+    {
+      id: 2,
+      dateRange: '2025-2028',
+      organization: 'Australian Research Council Discovery Project Grant',
+      title: 'Seeing the world one step at a time',
+      logo: '/assets/arc_1.svg',
+      additionalInfo:
         'Our knowledge of perception comes from static experiments, yet our lives\n' +
         'are   very   active   (eg:   reaching,   walking).   Recent   work   shows   close\n' +
         'perception/action links and that action can shape perception. This project\n' +
@@ -88,14 +52,30 @@ const GrantsDisplay = () => {
         'perception/action link. It will advance our knowledge of how the brain\n' +
         'integrates its twin functions of perceiving the world and acting upon it and\n' +
         'will generate useful knowledge for information transfer and time-critical\n' +
-        'responses in active contexts.\n' +
+        'responses in active contexts.',
+    },
+    {
+      id: 3,
+      dateRange: '2024-2029',
+      organization: 'National Health and Medical Research Council Emerging Leader 1 Investigator Award',
+      title: 'Using artificial intelligence to understand impaired sensory processing in autism',
+      logo: '/assets/nhmrc_tran.png',
+      additionalInfo:
         'Our perception of the world is shaped by combining information from our\n' +
         'senses. Deficits in multisensory integration are thought to underlie some of\n' +
         'the core impairments of brain disorders such as autism and schizophrenia.\n' +
         'This research will characterise the brain mechanisms and consequences of\n' +
         'multisensory integration impairments using machine learning and brain\n' +
         'imaging. Ultimately, this project seeks to inform targeted interventions\n' +
-        'and help us to better treat people with brain disorders.\n' +
+        'and help us to better treat people with brain disorders.',
+    },
+    {
+      id: 4,
+      dateRange: '2024-2027',
+      organization: 'Australian Research Council Discovery Project Grant',
+      title: 'Creating a non-invasive window into the mind',
+      logo: '/assets/arc_1.svg',
+      additionalInfo:
         'This project aims to create better tools to study the human mind. This\n' +
         'project expects to generate new knowledge that can be used to non-\n' +
         'invasively   image   neuronal   activity.   Expected   outcomes   include   the\n' +
@@ -106,7 +86,15 @@ const GrantsDisplay = () => {
         'functions, i.e., creating a window into the mind. In the future, outcomes\n' +
         'from this study could improve our understanding of mental disorders,\n' +
         'advance   computer   brain   interface   technology,   and   inspire   the   next\n' +
-        'paradigm shift in artificial intelligence.\n' +
+        'paradigm shift in artificial intelligence.',
+    },
+    {
+      id: 5,
+      dateRange: '2021-2025',
+      organization: 'Australian Research Council Discovery Early Career Research Award',
+      title: 'Understanding how the brain combines sensory information',
+      logo: '/assets/arc_1.svg',
+      additionalInfo:
         'To combine or not to combine information? Combining different types of\n' +
         'sensory information, a.k.a. cues, in a way that yields accurate judgements\n' +
         'and guides effective behaviours is a fundamental cognitive task, but how\n' +
@@ -115,7 +103,15 @@ const GrantsDisplay = () => {
         'virtual reality applications to pathological delusions and hallucinations.\n' +
         'This project aims to develop a biological explanation of how the healthy\n' +
         'human brain combines cues by using advanced computational modelling,\n' +
-        'neuroimaging, and psychophysical techniques.\n' +
+        'neuroimaging, and psychophysical techniques.',
+    },
+    {
+      id: 6,
+      dateRange: '2018-2021',
+      organization: 'Leverhulme Trust Early Career Research Fellowship ',
+      title: 'Perceiving in depth: The intersection of minds and machines',
+      logo: '/assets/arc_1.svg',
+      additionalInfo:
         'Perceiving the three-dimensional (3D) structure of the world represents a\n' +
         'fundamentally   difficult   challenge   in   inferring   depth   from   ambiguous\n' +
         'sensory inputs. The inverse problem of estimating 3D structure from 2D\n' +
@@ -143,54 +139,6 @@ const GrantsDisplay = () => {
       title: 'The intersection of minds and machines',
       logo: '/assets/arc_1.svg',
       additionalInfo:
-        'Advances in non-invasive decoding of brain activity hold potential benefit\n' +
-        'to   various   fields,   including   brain-computer   interfaces   (e.g.   to   control\n' +
-        'assistive devices), fundamental and clinical neuroscience research (e.g. to\n' +
-        'understand healthy and unhealthy patterns of brain activity), ethical and\n' +
-        'legal applications (e.g. to assess truthfulness or intent), and consumer\n' +
-        'research   and   marketing   (e.g.   to   assess   effectiveness   of   marketing\n' +
-        'strategies). Unlike invasive techniques, progress in non-invasive methods\n' +
-        'can be widely applied to achieve significant benefit across society. This\n' +
-        'project   seeks   to   develop   methods   for   assessing   dietary   biases   using\n' +
-        'decoding of brain activity from electroencephalographical recordings.\n' +
-        'Our knowledge of perception comes from static experiments, yet our lives\n' +
-        'are   very   active   (eg:   reaching,   walking).   Recent   work   shows   close\n' +
-        'perception/action links and that action can shape perception. This project\n' +
-        'uses   new   technologies   to   test   dynamic   perception   in   free-walking\n' +
-        'observers in virtual multisensory environments. It will reveal how walking\n' +
-        'modulates perception at the step rate, the influence of intention (active vs\n' +
-        'passive   action)   and   establish   the   neural   mechanisms   underlying   the\n' +
-        'perception/action link. It will advance our knowledge of how the brain\n' +
-        'integrates its twin functions of perceiving the world and acting upon it and\n' +
-        'will generate useful knowledge for information transfer and time-critical\n' +
-        'responses in active contexts.\n' +
-        'Our perception of the world is shaped by combining information from our\n' +
-        'senses. Deficits in multisensory integration are thought to underlie some of\n' +
-        'the core impairments of brain disorders such as autism and schizophrenia.\n' +
-        'This research will characterise the brain mechanisms and consequences of\n' +
-        'multisensory integration impairments using machine learning and brain\n' +
-        'imaging. Ultimately, this project seeks to inform targeted interventions\n' +
-        'and help us to better treat people with brain disorders.\n' +
-        'This project aims to create better tools to study the human mind. This\n' +
-        'project expects to generate new knowledge that can be used to non-\n' +
-        'invasively   image   neuronal   activity.   Expected   outcomes   include   the\n' +
-        'development   of   unique   new   Magnetic   Resonance   Imaging   (MRI)\n' +
-        'instruments to study neuronal activity in both highly controlled laboratory\n' +
-        'conditions and in humans, with the spatial and temporal resolution needed\n' +
-        'to   study   the   neuronal   circuitry   that   drives   low   and   high-level   brain\n' +
-        'functions, i.e., creating a window into the mind. In the future, outcomes\n' +
-        'from this study could improve our understanding of mental disorders,\n' +
-        'advance   computer   brain   interface   technology,   and   inspire   the   next\n' +
-        'paradigm shift in artificial intelligence.\n' +
-        'To combine or not to combine information? Combining different types of\n' +
-        'sensory information, a.k.a. cues, in a way that yields accurate judgements\n' +
-        'and guides effective behaviours is a fundamental cognitive task, but how\n' +
-        'this is instantiated in the brain is unknown. Disrupted cue combination is\n' +
-        'associated with negative health outcomes ranging from cybersickness in\n' +
-        'virtual reality applications to pathological delusions and hallucinations.\n' +
-        'This project aims to develop a biological explanation of how the healthy\n' +
-        'human brain combines cues by using advanced computational modelling,\n' +
-        'neuroimaging, and psychophysical techniques.\n' +
         'Perceiving the three-dimensional (3D) structure of the world represents a\n' +
         'fundamentally   difficult   challenge   in   inferring   depth   from   ambiguous\n' +
         'sensory inputs. The inverse problem of estimating 3D structure from 2D\n' +

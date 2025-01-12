@@ -18,7 +18,7 @@ const mock = [
     avatar: '/assets/Reuben.jpg',
     about: 'Dr Reuben Rideaux is a Senior Lecturer and NHMRC Emerging Leadership Fellow at the University of Sydney\'s School of Psychology, and an Honorary Senior Research Fellow at the Queensland Brain Institute',
     social: {
-      googleScholar: 'https://scholar.google.com/',
+      googleScholar: 'https://scholar.google.com.au/citations?user=YcarQiUAAAAJ&hl=en',
       github: 'https://reubenrideaux.github.io/',
       bluesky: 'https://bsky.app/profile/reubenrideaux.bsky.social',
     },
@@ -50,6 +50,17 @@ const mock = [
     title: 'Research Assistant',
     avatar: '/assets/Zoey_2.png',
     about: 'I completed my Honours thesis in the lab, where I focused on predictive coding and multisensory integration, and I currently work as a Research Assistant. My research interests lie in understanding how the brain regulates perception, cognition, and motor responses to facilitate effective interaction with the world. I aim to explore the neural mechanisms driving these processes, contributing to a deeper understanding of human perception and cognition.',
+    social: {
+      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
+      github: 'https://github.com/zoeyhu',
+      bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
+    },
+  },
+  {
+    name: 'Vishnu Mohan',
+    title: 'MPhil Researcher',
+    avatar: '/assets/vish.jpg',
+    about: 'I\'m doing my MPhil here. My research interests lie at the intersection of artificial intelligence and neuroscience.',
     social: {
       googleScholar: 'https://scholar.google.com/', // Replace with real link if available
       github: 'https://github.com/zoeyhu',
@@ -134,50 +145,53 @@ const Team = () => {
                   >
                     {item.about}
                   </Typography>
-                  <Box marginTop={4}>
-                    {/* Google Scholar Link (using custom SVG) */}
-                    <Link
-                      href={item.social.googleScholar}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <IconButton size={'small'} color={'primary'}>
-                        <Box
-                          component="img"
-                          src="/assets/gscho.svg"
-                          alt="Google Scholar"
-                          sx={{ width: 24, height: 24 }}
-                        />
-                      </IconButton>
-                    </Link>
+                  {/* Conditionally render social links only for Reuben Rideaux */}
+                  {item.name === 'Reuben Rideaux' && (
+                    <Box marginTop={4}>
+                      {/* Google Scholar Link (using custom SVG) */}
+                      <Link
+                        href={item.social.googleScholar}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IconButton size={'small'} color={'primary'}>
+                          <Box
+                            component="img"
+                            src="/assets/gscho.svg"
+                            alt="Google Scholar"
+                            sx={{ width: 24, height: 24 }}
+                          />
+                        </IconButton>
+                      </Link>
 
-                    {/* GitHub Link */}
-                    <Link
-                      href={item.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <IconButton size={'small'} color={'primary'}>
-                        <GitHubIcon />
-                      </IconButton>
-                    </Link>
+                      {/* GitHub Link */}
+                      <Link
+                        href={item.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IconButton size={'small'} color={'primary'}>
+                          <GitHubIcon />
+                        </IconButton>
+                      </Link>
 
-                    {/* Bluesky Link (using custom SVG) */}
-                    <Link
-                      href={item.social.bluesky}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <IconButton size={'small'} color={'primary'}>
-                        <Box
-                          component="img"
-                          src="/assets/bluesky_2.svg"
-                          alt="Bluesky"
-                          sx={{ width: 24, height: 24 }}
-                        />
-                      </IconButton>
-                    </Link>
-                  </Box>
+                      {/* Bluesky Link (using custom SVG) */}
+                      <Link
+                        href={item.social.bluesky}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IconButton size={'small'} color={'primary'}>
+                          <Box
+                            component="img"
+                            src="/assets/bluesky_2.svg"
+                            alt="Bluesky"
+                            sx={{ width: 24, height: 24 }}
+                          />
+                        </IconButton>
+                      </Link>
+                    </Box>
+                  )}
                 </Box>
               </CardContent>
             </Box>

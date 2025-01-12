@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
@@ -15,9 +16,9 @@ const CareerOpening = () => {
           <Application />
         </Container>
       </Box>
-      <Container>
-        <Newsletter />
-      </Container>
+      {/*<Container>*/}
+      {/*  <Newsletter />*/}
+      {/*</Container>*/}
     </Main>
   );
 };

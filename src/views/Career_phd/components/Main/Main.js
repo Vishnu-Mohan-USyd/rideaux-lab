@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -20,8 +21,17 @@ const Main = () => {
     defaultMatches: true,
   });
 
+  // We’ll store the Qualifications in an array to create fancy bullet points.
+  const qualifications = [
+    'Candidates with Ph.D. degrees in fields relevant to vision science are encouraged to apply.',
+    'Ideal candidates should be well-trained in psychophysical studies, experimental design, human behaviour data collection, and statistics.',
+    'Scientific writing skills are essential.',
+    'Experience with EEG and/or VR is not required but desirable.',
+  ];
+
   return (
     <Box>
+      {/* Top Header and Action Buttons */}
       <Box
         display={'flex'}
         justifyContent={'space-between'}
@@ -30,13 +40,15 @@ const Main = () => {
       >
         <Box>
           <Typography fontWeight={700} variant={'h4'} gutterBottom>
-            Seeing the world one step at a time
+            Behavioural and neural investigations of human sensory and cognitive processes
           </Typography>
-          <Typography variant={'h6'}>School of Psychology, The University of Sydney</Typography>
+          <Typography variant={'h6'}>
+            School of Psychology, The University of Sydney
+          </Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Button variant="contained" color="primary" size="large">
-            Enquire now
+            Enquire Now
           </Button>
           {/*<Box*/}
           {/*  component={Button}*/}
@@ -50,72 +62,104 @@ const Main = () => {
         </Box>
       </Box>
       <Divider sx={{ marginY: 4 }} />
+
       <Grid container spacing={isMd ? 4 : 2}>
+        {/* Main Content */}
         <Grid item xs={12} md={8}>
+          {/* Summary Section */}
           <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Summary
             </Typography>
             <Typography component={'p'}>
-              Our perception of the world does not solely rely on what our eyes see. Our actions play a crucial role in shaping how we perceive the world around us. Three of the most frequent actions are eye movements (saccades), reaching/grasping, and walking. The first two are well studied and known to influence perception. During saccades, for example, vision is briefly lost ("saccadic suppression") and when reaching, our eye gaze diverts to the target and away from other objects. Despite its fundamental role in our daily lives, little is known about how walking influences perception.
-              <p/>
-              This project combines multiple technologies (virtual reality, electroencephalography, eye tracking, motion platform, artificial intelligence) to test dynamic perception in free-walking observers in virtual multisensory environments. It will reveal how walking modulates perception at the step rate, the influence of intention (active vs passive action) and establish the neural mechanisms underlying the perception/action link.
-              <p/>
-              Understanding the influence of walking on our perception holds the potential to improve public safety and unlock myriad benefits in our daily lives. For example, the discovery of saccadic suppression informed digital display design to improve user experiences (e.g., exploiting saccadic masking, reduced motion blur.). The outcomes from this project could be harnessed to inform public safety measures/policy and enhance the efficiency of digital displays, communication systems, and device feedback mechanisms, thereby enriching user experiences.
+              The overarching aim of this program of research is to better understand the neural and behavioural correlates of perceptual and cognitive functions. We will take a convergent approach to examining these functions by undertaking experiments that use three different but complementary research methodologies: (1) behavioural measurements, (2) neural recordings, and (3) computational modelling.
+              <p />
             </Typography>
           </Box>
+
+
           <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Additional Information
+              Synopsis
             </Typography>
             <Typography component={'p'}>
-              This opportunity/project is a part of Faculty of Science Australian Research Council (ARC) Scholarship scheme and will be advertised on the Scholarship Office website starting mid- January 2025. The selected applicant is expected to commence their candidature in March (RP2) 2025 onward. Successful applicants will be supervised by Dr Reuben Rideaux and focus primarily on their own PhD projects. They will also have the opportunity to participate in any activities held at the University of Sydney under ARC Discovery Project (DP). Candidate will be enrolled in School of Psychology, Faculty of Science at University of Sydney.
+              The human brain has a remarkable ability to perceive and process information, and
+              to co‐ordinate appropriate actions in the form of motor responses. Despite the enormous
+              strides that have been made in understanding human perceptual and cognitive processes
+              over the last 20 years, there are still many fundamental gaps in our understanding of how
+              the brain regulates the processes underlying our interaction with and perception of the
+              world. A central aim of the current project is to better understand how human perception
+              and cognition.
             </Typography>
-            <Grid container spacing={1} sx={{ marginTop: 1 }}>
-              {[
-                'The application process is separate from applying for admission to the University of Sydney.',
-                'The scholarship will only be awarded once the successful scholarship applicant has received an unconditional offer of admission.',
-                'International applicants are responsible for securing any necessary visas and costs to enable study based in Sydney.',
-              ].map((item, i) => (
-                <Grid item xs={12} key={i}>
-                  <Box
-                    component={ListItem}
-                    disableGutters
-                    width={'auto'}
-                    padding={0}
-                  >
-                    <Box
-                      component={ListItemAvatar}
-                      minWidth={'auto !important'}
-                      marginRight={2}
-                    >
-                      <Box
-                        component={Avatar}
-                        bgcolor={theme.palette.secondary.main}
-                        width={20}
-                        height={20}
-                      >
-                        <svg
-                          width={12}
-                          height={12}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </Box>
-                    </Box>
-                    <ListItemText primary={item} />
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
+            <Typography component={'p'} sx={{ marginTop: 2 }}>
+              We now have the capacity to image the brain using methods such as
+              electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) as people
+              undertake various perceptual, cognitive and motor tasks. This project will use different
+              techniques, alone and in combination, to better understand the neural processes that
+              underpin perception, cognition and motor control.
+            </Typography>
           </Box>
+
+          {/* Additional Information Section */}
+          <Box marginBottom={3}>
+            <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              Additional information
+            </Typography>
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              Project keywords:
+            </Typography>
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              neuroscience; psychology; perception; cognition; artificial intelligence; AI; functional magnetic resonance imaging; fMRI; electroencephalography; EEG; magnetic resonance spectroscopy; MRS; eye tracking
+            </Typography>
+
+            {/* Qualifications header (unchanged) */}
+            {/*<Typography component={'p'} sx={{ marginBottom: 1 }}>*/}
+            {/*  <strong>Qualifications</strong>*/}
+            {/*</Typography>*/}
+
+            {/*/!* Replace the textual asterisks with bullet points *!/*/}
+            {/*<Grid container spacing={1} sx={{ marginBottom: 2 }}>*/}
+            {/*  {qualifications.map((item, idx) => (*/}
+            {/*    <Grid item xs={12} key={idx}>*/}
+            {/*      <Box component={ListItem} disableGutters width={'auto'} padding={0}>*/}
+            {/*        <Box*/}
+            {/*          component={ListItemAvatar}*/}
+            {/*          minWidth={'auto !important'}*/}
+            {/*          marginRight={2}*/}
+            {/*        >*/}
+            {/*          <Box*/}
+            {/*            component={Avatar}*/}
+            {/*            bgcolor={theme.palette.secondary.main}*/}
+            {/*            sx={{ width: 20, height: 20 }}*/}
+            {/*          >*/}
+            {/*            <svg*/}
+            {/*              width={12}*/}
+            {/*              height={12}*/}
+            {/*              xmlns="http://www.w3.org/2000/svg"*/}
+            {/*              viewBox="0 0 20 20"*/}
+            {/*              fill="currentColor"*/}
+            {/*            >*/}
+            {/*              <path*/}
+            {/*                fillRule="evenodd"*/}
+            {/*                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"*/}
+            {/*                clipRule="evenodd"*/}
+            {/*              />*/}
+            {/*            </svg>*/}
+            {/*          </Box>*/}
+            {/*        </Box>*/}
+            {/*        <ListItemText primary={item} />*/}
+            {/*      </Box>*/}
+            {/*    </Grid>*/}
+            {/*  ))}*/}
+            {/*</Grid>*/}
+
+            <Typography component={'p'} sx={{ marginBottom: 1 }}>
+              We welcome applicants with diverse backgrounds, regardless of nationality, gender,
+              orientation, or disability status.
+            </Typography>
+          </Box>
+
+          {/* Want to find out more? */}
           <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Want to find out more?
@@ -144,14 +188,18 @@ const Main = () => {
               </Box>
             </Box>
           </Box>
-          <Box marginBottom={3}>
-            <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Opportunity ID
-            </Typography>
-            <Typography>
-              The opportunity ID for this research opportunity is 3596
-            </Typography>
-          </Box>
+
+          {/* Opportunity ID */}
+          {/*<Box marginBottom={3}>*/}
+          {/*  <Typography variant={'h5'} fontWeight={700} gutterBottom>*/}
+          {/*    Opportunity ID*/}
+          {/*  </Typography>*/}
+          {/*  <Typography>*/}
+          {/*    The opportunity ID for this research opportunity is 3316*/}
+          {/*  </Typography>*/}
+          {/*</Box>*/}
+
+          {/* Other Opportunities */}
           <Box>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Other opportunities with Dr Reuben Rideaux
@@ -159,12 +207,14 @@ const Main = () => {
             <Box component="ul" sx={{ pl: 2 }}>
               <Box component="li">
                 <Typography>
-                  Behavioural and neural investigations of human sensory and cognitive processes
+                  Seeing the world one step at a time
                 </Typography>
               </Box>
             </Box>
           </Box>
         </Grid>
+
+        {/* Sidebar Content */}
         <Grid item xs={12} md={4}>
           <Grid container spacing={isMd ? 4 : 2} direction="column">
             <Grid item xs={12} data-aos="fade-up">
@@ -177,7 +227,7 @@ const Main = () => {
                       display: 'flex',
                       alignItems: 'center',
                       textDecoration: 'none',
-                      color: 'common.white'
+                      color: 'common.white',
                     }}
                   >
                     <Typography
@@ -186,7 +236,7 @@ const Main = () => {
                       sx={{
                         color: 'common.white',
                         marginRight: 1,
-                        marginBottom: 0
+                        marginBottom: 0,
                       }}
                     >
                       More about Dr Reuben Rideaux

@@ -142,12 +142,10 @@ const Application = () => {
           gutterBottom
           align={'center'}
         >
-          Apply for this job
+          Enquire about this position
         </Typography>
         <Typography color="text.secondary" align={'center'}>
-          We develop intelligent solutions for companies to reduce their
-          operational costs, increase their profitability and improve service
-          quality.
+          Leave us your information below and we will get in touch with you!
         </Typography>
       </Box>
 
@@ -328,7 +326,7 @@ const Application = () => {
               size="large"
               disabled={formik.isSubmitting}
             >
-              {formik.isSubmitting ? 'Sending...' : 'Apply now'}
+              {formik.isSubmitting ? 'Sending...' : 'Enquire now'}
             </Button>
           </Grid>
         </Grid>

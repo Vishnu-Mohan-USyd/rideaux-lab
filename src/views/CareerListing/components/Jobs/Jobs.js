@@ -29,7 +29,7 @@ export const mock = [
     location: 'Sydney',
     type: 'Full time',
     team: 'Dr Reuben Rideaux',
-    subtitle: 'Seeing the world one step at a time (3316)',
+    subtitle: 'Seeing the world one step at a time',
     role: 'postdoc',
     applicationUrl: '/career-3316',
     isExternal: false
@@ -40,9 +40,9 @@ export const mock = [
     location: 'Sydney',
     type: 'Full time',
     team: 'Dr Reuben Rideaux',
-    subtitle: 'Behavioural and neural investigations of human sensory and cognitive processes',
+    subtitle: 'Behavioural and neural investigations of human sensory and cognitive processes (3316)',
     role: 'phd',
-    applicationUrl: 'https://www.sydney.edu.au/research/opportunities/3316',
+    applicationUrl: '/career-phd',
     isExternal: true
   },
 ];

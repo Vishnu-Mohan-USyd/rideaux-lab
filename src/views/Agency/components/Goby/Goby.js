@@ -191,9 +191,7 @@ const Goby = () => {
               marginBottom: 0,
             }}
           >
-            These studies introduce or compare novel methods and tools for neuroimaging,
-            spectroscopy, and measurement of neural activity. They often focus on the technical
-            or methodological aspects of measuring brain signals.
+            This research investigates unisensory and multisensory information processing in the brain, and how this effectively supports perception and action.
           </Typography>
         </Box>
       </Box>
