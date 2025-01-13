@@ -34,8 +34,9 @@ jobs:
       - name: 📂 Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.CPANEL_SERVER }}
-          username: ${{ secrets.CPANEL_USERNAME }}
-          password: ${{ secrets.CPANEL_PASSWORD }}
-          local-dir: ./build/  # The folder to upload (your build output)
-          server-dir: public_html/  # Your cPanel public directory
+          server: ftp.kdg.anc.temporary.site
+          username: vysoforlife@rideauxlab.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build/
+          server-dir: /home2/kdgancte/public_html/
+          port: 21
