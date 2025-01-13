@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -79,29 +80,29 @@ const Work = () => {
               <Typography color="text.secondary" paragraph>
                 {item.description}
               </Typography>
-              <Button
-                size="large"
-                endIcon={
-                  <Box
-                    component="svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    width={24}
-                    height={24}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </Box>
-                }
-              >
-                Learn more
-              </Button>
+              {/*<Button*/}
+              {/*  size="large"*/}
+              {/*  endIcon={*/}
+              {/*    <Box*/}
+              {/*      component="svg"*/}
+              {/*      xmlns="http://www.w3.org/2000/svg"*/}
+              {/*      fill="none"*/}
+              {/*      viewBox="0 0 24 24"*/}
+              {/*      stroke="currentColor"*/}
+              {/*      width={24}*/}
+              {/*      height={24}*/}
+              {/*    >*/}
+              {/*      <path*/}
+              {/*        strokeLinecap="round"*/}
+              {/*        strokeLinejoin="round"*/}
+              {/*        strokeWidth={2}*/}
+              {/*        d="M17 8l4 4m0 0l-4 4m4-4H3"*/}
+              {/*      />*/}
+              {/*    </Box>*/}
+              {/*  }*/}
+              {/*>*/}
+              {/*  Learn more*/}
+              {/*</Button>*/}
             </Box>
           </Grid>
         ))}

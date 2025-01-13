@@ -110,7 +110,7 @@ const GrantsDisplay = () => {
       dateRange: '2018-2021',
       organization: 'Leverhulme Trust Early Career Research Fellowship ',
       title: 'Perceiving in depth: The intersection of minds and machines',
-      logo: '/assets/arc_1.svg',
+      logo: '/assets/lhulme.svg',
       additionalInfo:
         'Perceiving the three-dimensional (3D) structure of the world represents a\n' +
         'fundamentally   difficult   challenge   in   inferring   depth   from   ambiguous\n' +
@@ -137,7 +137,7 @@ const GrantsDisplay = () => {
       dateRange: '2018-2021',
       organization: 'Isaac Newton Trust Fellowship',
       title: 'The intersection of minds and machines',
-      logo: '/assets/arc_1.svg',
+      logo: '/assets/ints.svg',
       additionalInfo:
         'Perceiving the three-dimensional (3D) structure of the world represents a\n' +
         'fundamentally   difficult   challenge   in   inferring   depth   from   ambiguous\n' +

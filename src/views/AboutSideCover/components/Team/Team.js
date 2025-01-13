@@ -29,9 +29,9 @@ const mock = [
     avatar: '/assets/Zak.png',
     about: 'My PhD explores audiovisual processing, and how our perception of one modality influences our perception of the other. The project aims to use forward modelling techniques on neural data to characterise this multisensory processing.',
     social: {
-      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
+      googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zakbuhmann',
-      bluesky: 'https://bsky.app/profile/zakbuhmann.bsky.social', // Placeholder
+      bluesky: 'https://bsky.app/profile/zakbuhmann.bsky.social',
     },
   },
   {
@@ -40,9 +40,9 @@ const mock = [
     avatar: '/assets/Immy.png',
     about: 'I am an ambitious workaholic, but apart from that, pretty simple person.',
     social: {
-      googleScholar: 'https://scholar.google.com/', // Replace with real link if available
+      googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/immybreen',
-      bluesky: 'https://bsky.app/profile/immybreen.bsky.social', // Placeholder
+      bluesky: 'https://bsky.app/profile/immybreen.bsky.social',
     },
   },
   {
@@ -53,7 +53,7 @@ const mock = [
     social: {
       googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zoeyhu',
-      bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
+      bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social',
     },
   },
   {
@@ -64,7 +64,7 @@ const mock = [
     social: {
       googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zoeyhu',
-      bluesky: 'https://bsky.app/profile/zoeyhu.bsky.social', // Placeholder
+      bluesky: 'https://bsky.app/profile/vyso.bsky.social',
     },
   },
 ];
@@ -145,37 +145,40 @@ const Team = () => {
                   >
                     {item.about}
                   </Typography>
-                  {/* Conditionally render social links only for Reuben Rideaux */}
-                  {item.name === 'Reuben Rideaux' && (
+                  {/* Show social links for Reuben, Zak, and Vishnu */}
+                  {(item.name === 'Reuben Rideaux' || item.name === 'Zak Buhmann' || item.name === 'Vishnu Mohan') && (
                     <Box marginTop={4}>
-                      {/* Google Scholar Link (using custom SVG) */}
-                      <Link
-                        href={item.social.googleScholar}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <IconButton size={'small'} color={'primary'}>
-                          <Box
-                            component="img"
-                            src="/assets/gscho.svg"
-                            alt="Google Scholar"
-                            sx={{ width: 24, height: 24 }}
-                          />
-                        </IconButton>
-                      </Link>
+                      {/* Only show Google Scholar and GitHub for Reuben */}
+                      {item.name === 'Reuben Rideaux' && (
+                        <>
+                          <Link
+                            href={item.social.googleScholar}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton size={'small'} color={'primary'}>
+                              <Box
+                                component="img"
+                                src="/assets/gscho.svg"
+                                alt="Google Scholar"
+                                sx={{ width: 24, height: 24 }}
+                              />
+                            </IconButton>
+                          </Link>
 
-                      {/* GitHub Link */}
-                      <Link
-                        href={item.social.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <IconButton size={'small'} color={'primary'}>
-                          <GitHubIcon />
-                        </IconButton>
-                      </Link>
+                          <Link
+                            href={item.social.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <IconButton size={'small'} color={'primary'}>
+                              <GitHubIcon />
+                            </IconButton>
+                          </Link>
+                        </>
+                      )}
 
-                      {/* Bluesky Link (using custom SVG) */}
+                      {/* Bluesky Link for Reuben, Zak, and Vishnu */}
                       <Link
                         href={item.social.bluesky}
                         target="_blank"
