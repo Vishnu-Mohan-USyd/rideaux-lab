@@ -38,5 +38,5 @@ jobs:
           username: vysoforlife@rideauxlab.com
           password: Kangaroo@619
           local-dir: ./build/
-          server-dir: ./
+          server-dir: /public_html/
           port: 21
