@@ -1,0 +1,41 @@
+name: Deploy to cPanel
+on:
+  push:
+    branches: [ master ]  # Triggers when you push to master branch
+    # Note: Change 'master' to 'main' if that's your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Get your code from repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Setup Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Choose your Node.js version
+          cache: 'yarn'       # Using yarn since I see yarn.lock in your repo
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Step 4: Build the React application
+      - name: Build
+        run: yarn run build
+        env:
+          CI: false  # This prevents treating warnings as errors
+
+      # Step 5: Deploy to cPanel
+      - name: 📂 Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.CPANEL_SERVER }}
+          username: ${{ secrets.CPANEL_USERNAME }}
+          password: ${{ secrets.CPANEL_PASSWORD }}
+          local-dir: ./build/  # The folder to upload (your build output)
+          server-dir: public_html/  # Your cPanel public directory
