@@ -3,9 +3,20 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+const MotionDivider = motion(Divider);
+
+const dividerVariants = {
+  hidden: { width: 0 },
+  visible: {
+    width: '100%',
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+};
 
 const mock = [
   {
@@ -94,6 +105,14 @@ const Streams = () => {
           We focus on three streams of research
         </Typography>
       </Box>
+
+      {/* Animated Divider */}
+      <MotionDivider
+        variants={dividerVariants}
+        initial="hidden"
+        animate={Object.keys(inViewItems).length > 0 ? 'visible' : 'hidden'}
+        sx={{ my: 4, borderColor: 'secondary.main', borderWidth: 2 }}
+      />
 
       {/* Colored Cards */}
       <Grid container spacing={4}>
