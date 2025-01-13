@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -38,7 +39,7 @@ const mock = [
     name: 'Immy Breen',
     title: 'Intern',
     avatar: '/assets/Immy.png',
-    about: 'I am an ambitious workaholic, but apart from that, pretty simple person.',
+    about: 'My name is Immy, I am a third-year undergraduate student from Cardiff University currently completing a research placement year at the University of Sydney. My research interests focus on understanding the neural mechanisms underlying sensory processing and how these processes are disrupted in neurological and psychiatric disorders like autism and schizophrenia. I am particularly fascinated by how research can contribute to improving people\'s quality of life by identifying key mechanisms and tailoring interventions to optimize individual performance.',
     social: {
       googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/immybreen',
@@ -49,7 +50,7 @@ const mock = [
     name: 'Zoey Hu',
     title: 'Research Assistant',
     avatar: '/assets/Zoey_2.png',
-    about: 'I completed my Honours thesis in the lab, where I focused on predictive coding and multisensory integration, and I currently work as a Research Assistant. My research interests lie in understanding how the brain regulates perception, cognition, and motor responses to facilitate effective interaction with the world. I aim to explore the neural mechanisms driving these processes, contributing to a deeper understanding of human perception and cognition.',
+    about: 'I completed my Honours thesis in the lab, where I focused on predictive coding and multisensory integration, and I currently work as a Research Assistant. My research interests lie in understanding how the brain regulates perception, cognition, and motor responses to facilitate effective interaction with the world. By utilizing neuroimaging and modeling techniques, I aim to explore the neural mechanisms driving these processes, contributing to a deeper understanding of human perception and cognition.',
     social: {
       googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/zoeyhu',
@@ -71,6 +72,7 @@ const mock = [
 
 const Team = () => {
   const theme = useTheme();
+  const isDarkMode = theme.palette.mode === 'dark';
 
   return (
     <Box>
@@ -105,8 +107,10 @@ const Team = () => {
                   transform: `translateY(-${theme.spacing(1 / 2)})`,
                   zIndex: 2,
                   '& .about-text': {
-                    height: 'auto',
-                    maxHeight: '300px',
+                    maxHeight: '1000px', // Increased from 300px for longer bios
+                    '&::after': {
+                      opacity: '0 !important',
+                    }
                   },
                 },
               }}
@@ -125,9 +129,9 @@ const Team = () => {
                     color={'text.secondary'}
                     className="about-text"
                     sx={{
-                      height: '4.5em',
+                      maxHeight: '4.5em',
                       overflow: 'hidden',
-                      transition: 'all .3s ease',
+                      transition: 'all .5s ease',
                       position: 'relative',
                       '&::after': {
                         content: '""',
@@ -135,11 +139,12 @@ const Team = () => {
                         bottom: 0,
                         right: 0,
                         width: '100%',
-                        height: '1.5em',
-                        background: 'linear-gradient(transparent, white)',
-                      },
-                      '&:hover::after': {
-                        display: 'none',
+                        height: '2em',
+                        background: theme => {
+                          const baseColor = theme.palette.background.paper;
+                          return `linear-gradient(transparent, ${baseColor})`;
+                        },
+                        transition: 'opacity .3s ease',
                       },
                     }}
                   >
