@@ -36,7 +36,7 @@ jobs:
         with:
           server: ftp.kdg.anc.temporary.site
           username: vysoforlife@rideauxlab.com
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: Kangaroo@619
           local-dir: ./build/
           server-dir: /home2/kdgancte/public_html/
           port: 21
