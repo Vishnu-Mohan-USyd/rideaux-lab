@@ -76,7 +76,7 @@ const Streams = () => {
   }, []);
 
   const handleLearnMore = (sectionId) => {
-    navigate('/agency');
+    navigate('/publications');
     setTimeout(() => {
       const element = document.querySelector(`#${sectionId}`);
       if (element) {

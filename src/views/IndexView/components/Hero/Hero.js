@@ -148,7 +148,7 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/agency'}
+                href={'/publications'}
               >
                 View publications
               </Button>
@@ -159,7 +159,7 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'/about-side-cover'}
+                  href={'/about-us'}
                   target={'blank'}
                   variant="outlined"
                   color="primary"

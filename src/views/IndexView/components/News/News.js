@@ -250,7 +250,7 @@ const LatestNews = () => {
             color="primary"
             size="large"
             component={Link}
-            to="/agency"
+            to="/publications"
           >
             View all publications
           </Button>

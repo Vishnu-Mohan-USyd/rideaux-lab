@@ -6,11 +6,11 @@ import {
   Customers as CustomersView,
   HireUs as HireUsView,
   Faq as FaqView,
-  Agency as AgencyView,
+  Publications as PublicationsView,
   CareerListing as CareerListingView,
   CareerListingMinimal as CareerListingMinimalView,
   CareerOpening as CareerOpeningView,
-  Career3316 as Career3316,
+  Careerpostdoc as CareerpostdocView,
   Careerphd as Careerphd,
   ContactPage as ContactPageView,
   Coworking as CoworkingView,
@@ -36,9 +36,9 @@ import {
   PortfolioMasonry as PortfolioMasonryView,
   PortfolioGrid as PortfolioGridView,
   CompanyTerms as CompanyTermsView,
-  ContactPageSidebarMap as ContactPageSidebarMapView,
+  Contactus as ContactPageSidebarMapView,
   ContactPageCover as ContactPageCoverView,
-  AboutSideCover as AboutSideCoverView,
+  Aboutus as AboutSideCoverView,
   BlogSearch as BlogSearchView,
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
@@ -83,8 +83,8 @@ const routes = [
     renderer: (params = {}) => <CareerListingView {...params} />,
   },
   {
-    path: '/career-3316',
-    renderer: (params = {}) => <Career3316 {...params} />,
+    path: '/career-postdoc',
+    renderer: (params = {}) => <CareerpostdocView {...params} />,
   },
   {
     path: '/career-phd',
@@ -131,8 +131,8 @@ const routes = [
     renderer: (params = {}) => <ExpoView {...params} />,
   },
   {
-    path: '/agency',
-    renderer: (params = {}) => <AgencyView {...params} />,
+    path: '/publications',
+    renderer: (params = {}) => <PublicationsView {...params} />,
   },
   {
     path: '/startup',
@@ -191,7 +191,7 @@ const routes = [
     renderer: (params = {}) => <CompanyTermsView {...params} />,
   },
   {
-    path: '/contact-sidebar-map',
+    path: '/contact-us',
     renderer: (params = {}) => <ContactPageSidebarMapView {...params} />,
   },
   {
@@ -203,7 +203,7 @@ const routes = [
     renderer: (params = {}) => <AboutView {...params} />,
   },
   {
-    path: '/about-side-cover',
+    path: '/about-us',
     renderer: (params = {}) => <AboutSideCoverView {...params} />,
   },
   {

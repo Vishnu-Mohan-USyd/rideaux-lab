@@ -70,14 +70,14 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         <Box marginLeft={4}>
           <NavItem
             title={'Publications'}
-            href="/agency"
+            href="/publications"
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
             title={'Contact'}
-            href="/contact-sidebar-map"
+            href="/contact-us"
             id={'blog-pages'}
             items={blogPages}
             colorInvert={colorInvert}

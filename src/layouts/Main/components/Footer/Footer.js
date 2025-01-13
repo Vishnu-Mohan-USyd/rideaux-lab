@@ -54,7 +54,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/about-side-cover"
+                href="/about-us"
                 target={'blank'}
                 color="text.primary"
                 variant={'subtitle2'}
@@ -68,7 +68,7 @@ const Footer = () => {
                 color="primary"
                 component="a"
                 target="blank"
-                href="/contact-sidebar-map"
+                href="/contact-us"
                 size="small"
               >
                 Contact

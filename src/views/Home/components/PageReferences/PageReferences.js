@@ -134,7 +134,7 @@ const data = [
       },
       {
         title: 'Agency',
-        href: '/agency',
+        href: '/publications',
         cover:
           'https://assets.maccarianagency.com/screenshots/the-front/img14.png',
         coverDark:
@@ -212,7 +212,7 @@ const data = [
       },
       {
         title: 'Company About (Cover)',
-        href: '/about-side-cover',
+        href: '/about-us',
         cover:
           'https://assets.maccarianagency.com/screenshots/the-front/img23.png',
         coverDark:

@@ -60,14 +60,14 @@ const SidebarNav = ({ pages, colorInvert = false }) => {
       <Box marginBottom={2}>
         <NavItem
           title={'Publications'}
-          href="/agency"
+          href="/publications"
           colorInvert={colorInvert}
         />
       </Box>
       <Box marginBottom={2}>
         <NavItem
           title={'Contact'}
-          href="/contact-sidebar-map"
+          href="/contact-us"
           colorInvert={colorInvert}
         />
       </Box>

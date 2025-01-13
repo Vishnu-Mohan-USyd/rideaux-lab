@@ -45,8 +45,8 @@ const pages = {
       href: '/home',
     },
     {
-      title: 'Agency',
-      href: '/agency',
+      title: 'Publications',
+      href: '/publications',
     },
     {
       title: 'E-Learning',
@@ -92,7 +92,7 @@ const pages = {
     // },
     {
       title: 'About Us',
-      href: '/about-side-cover',
+      href: '/about-us',
     },
     // {
     //   title: 'About',
@@ -122,31 +122,31 @@ const pages = {
   account: [
     {
       title: 'Publications Overview',
-      href: '/agency',
+      href: '/publications',
     },
     {
       title: 'Neural Imaging',
-      href: '/agency#imaging',
+      href: '/publications#imaging',
     },
     {
       title: 'Neurochemistry',
-      href: '/agency#chem',
+      href: '/publications#chem',
     },
     {
       title: 'Visual Perception and Adaptation',
-      href: '/agency#adaptation',
+      href: '/publications#adaptation',
     },
     {
       title: 'Motion Processing adn Visual Working Memory',
-      href: '/agency#motion',
+      href: '/publications#motion',
     },
     {
       title: 'Multisensory Integration and Causal Inference',
-      href: '/agency#av',
+      href: '/publications#av',
     },
     {
       title: 'Task Modulation and Higher Level Cognition',
-      href: '/agency#cogsci',
+      href: '/publications#cogsci',
     },
     // {
     //   title: 'Billing Options',
@@ -236,7 +236,7 @@ const pages = {
     },
     {
       title: 'Parallax',
-      href: '/agency',
+      href: '/publications',
     },
   ],
 };

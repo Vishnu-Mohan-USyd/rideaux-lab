@@ -31,7 +31,7 @@ export const mock = [
     team: 'Dr Reuben Rideaux',
     subtitle: 'Seeing the world one step at a time',
     role: 'postdoc',
-    applicationUrl: '/career-3316',
+    applicationUrl: '/career-postdoc',
     isExternal: false
   },
   {
@@ -55,7 +55,7 @@ const Jobs = () => {
   const [teamFilter, setTeamFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState('');
 
-  // Updated handleApply to handle both internal and external URLs
+  // Handle application navigation based on URL type
   const handleApply = (applicationUrl, isExternal) => {
     if (isExternal) {
       window.open(applicationUrl, '_blank', 'noopener,noreferrer');
@@ -65,6 +65,23 @@ const Jobs = () => {
     }
   };
 
+  // Dynamically generate filter options based on mock data
+  const roles = useMemo(() => {
+    const uniqueRoles = mock.map(job => job.role);
+    return Array.from(new Set(uniqueRoles));
+  }, []);
+
+  const teams = useMemo(() => {
+    const uniqueTeams = mock.map(job => job.team);
+    return Array.from(new Set(uniqueTeams));
+  }, []);
+
+  const locations = useMemo(() => {
+    const uniqueLocations = mock.map(job => job.location);
+    return Array.from(new Set(uniqueLocations));
+  }, []);
+
+  // Filter jobs based on selected filters
   const filteredJobs = useMemo(() => {
     return mock.filter(job => {
       const matchesRole = !roleFilter || job.role === roleFilter;
@@ -74,6 +91,7 @@ const Jobs = () => {
     });
   }, [roleFilter, teamFilter, locationFilter]);
 
+  // Handlers for filter changes
   const handleRoleChange = (event) => {
     setRoleFilter(event.target.value);
   };
@@ -87,7 +105,7 @@ const Jobs = () => {
   };
 
   return (
-    <Box>
+    <Box padding={4}>
       <Box marginBottom={4}>
         <Typography
           align={'center'}
@@ -99,7 +117,7 @@ const Jobs = () => {
           Open positions
         </Typography>
         <Typography fontWeight={700} variant={'h4'} align={'center'}>
-          Current lab openings
+          Current Lab Openings
         </Typography>
       </Box>
       <Grid
@@ -111,8 +129,9 @@ const Jobs = () => {
           },
         }}
       >
+        {/* Role Filter */}
         <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
+          <FormControl variant="outlined" fullWidth>
             <InputLabel id="role-filter-label">Roles</InputLabel>
             <Select
               labelId="role-filter-label"
@@ -121,17 +140,20 @@ const Jobs = () => {
               onChange={handleRoleChange}
             >
               <MenuItem value="">
-                <em>All roles</em>
+                <em>All Roles</em>
               </MenuItem>
-              <MenuItem value={'design'}>PhD</MenuItem>
-              <MenuItem value={'engineering'}>Postdoc</MenuItem>
-              <MenuItem value={'product'}>Internships</MenuItem>
-              <MenuItem value={'support'}>Research Assistant</MenuItem>
+              {roles.map(role => (
+                <MenuItem key={role} value={role}>
+                  {role.charAt(0).toUpperCase() + role.slice(1)}
+                </MenuItem>
+              ))}
             </Select>
           </FormControl>
         </Grid>
+
+        {/* Team Filter */}
         <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
+          <FormControl variant="outlined" fullWidth>
             <InputLabel id="team-filter-label">Teams</InputLabel>
             <Select
               labelId="team-filter-label"
@@ -140,14 +162,20 @@ const Jobs = () => {
               onChange={handleTeamChange}
             >
               <MenuItem value="">
-                <em>All teams</em>
+                <em>All Teams</em>
               </MenuItem>
-              <MenuItem value={'Dr Reuben Rideaux'}>Dr Reuben Rideaux</MenuItem>
+              {teams.map(team => (
+                <MenuItem key={team} value={team}>
+                  {team}
+                </MenuItem>
+              ))}
             </Select>
           </FormControl>
         </Grid>
+
+        {/* Location Filter */}
         <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
+          <FormControl variant="outlined" fullWidth>
             <InputLabel id="location-filter-label">Locations</InputLabel>
             <Select
               labelId="location-filter-label"
@@ -156,14 +184,18 @@ const Jobs = () => {
               onChange={handleLocationChange}
             >
               <MenuItem value="">
-                <em>All locations</em>
+                <em>All Locations</em>
               </MenuItem>
-              <MenuItem value={'Sydney'}>Sydney</MenuItem>
-              <MenuItem value={'Queensland'}>Queensland</MenuItem>
+              {locations.map(location => (
+                <MenuItem key={location} value={location}>
+                  {location}
+                </MenuItem>
+              ))}
             </Select>
           </FormControl>
         </Grid>
       </Grid>
+
       <Box
         display={'flex'}
         flexDirection={{ xs: 'column', sm: 'row' }}
@@ -192,78 +224,89 @@ const Jobs = () => {
             fontWeight={700}
             sx={{ color: 'common.black' }}
           >
-            {filteredJobs.length} openings
+            {filteredJobs.length} Openings
           </Typography>
         </Box>
       </Box>
+
       <Grid
         container
+        spacing={2}
         sx={{
           background: theme.palette.background.paper,
           borderRadius: 2,
+          padding: 2,
         }}
       >
-        {filteredJobs.map((item, i) => (
-          <Grid
-            item
-            xs={12}
-            key={item.id}
-            sx={{
-              borderBottom: `1px solid ${theme.palette.divider}`,
-              '&:last-child': {
-                borderBottom: 0,
-              },
-            }}
-          >
-            <Box padding={2} display={'flex'} alignItems={'center'}>
-              <Box
-                display={'flex'}
-                flexDirection={{ xs: 'column', sm: 'row' }}
-                flex={'1 1 100%'}
-                justifyContent={{ sm: 'space-between' }}
-                alignItems={{ sm: 'center' }}
-              >
-                <Box marginBottom={{ xs: 1, sm: 0 }}>
-                  <Typography variant={'subtitle1'} fontWeight={700}>
-                    {item.title}
-                  </Typography>
+        {filteredJobs.length > 0 ? (
+          filteredJobs.map((item) => (
+            <Grid
+              item
+              xs={12}
+              key={item.id}
+              sx={{
+                borderBottom: `1px solid ${theme.palette.divider}`,
+                '&:last-child': {
+                  borderBottom: 0,
+                },
+              }}
+            >
+              <Box padding={2} display={'flex'} alignItems={'center'}>
+                <Box
+                  display={'flex'}
+                  flexDirection={{ xs: 'column', sm: 'row' }}
+                  flex={'1 1 100%'}
+                  justifyContent={{ sm: 'space-between' }}
+                  alignItems={{ sm: 'center' }}
+                >
+                  <Box marginBottom={{ xs: 1, sm: 0 }}>
+                    <Typography variant={'subtitle1'} fontWeight={700}>
+                      {item.title}
+                    </Typography>
+                    <Typography color={'text.secondary'}>
+                      {item.subtitle}
+                    </Typography>
+                  </Box>
                   <Typography color={'text.secondary'}>
-                    {item.subtitle}
+                    {`${item.team} / ${item.location}`}
                   </Typography>
                 </Box>
-                <Typography color={'text.secondary'}>
-                  {`${item.team} / ${item.location}`}
-                </Typography>
+                <Box marginLeft={2}>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                    onClick={() => handleApply(item.applicationUrl, item.isExternal)}
+                    endIcon={
+                      <Box
+                        component={'svg'}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        width={12}
+                        height={12}
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </Box>
+                    }
+                  >
+                    Enquire
+                  </Button>
+                </Box>
               </Box>
-              <Box marginLeft={2}>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  size="small"
-                  onClick={() => handleApply(item.applicationUrl, item.isExternal)}
-                  endIcon={
-                    <Box
-                      component={'svg'}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      width={12}
-                      height={12}
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </Box>
-                  }
-                >
-                  Enquire
-                </Button>
-              </Box>
-            </Box>
+            </Grid>
+          ))
+        ) : (
+          <Grid item xs={12}>
+            <Typography variant="h6" align="center" color="text.secondary">
+              No positions match your criteria.
+            </Typography>
           </Grid>
-        ))}
+        )}
       </Grid>
     </Box>
   );

@@ -46,7 +46,7 @@ const GetStarted = () => {
           color="primary"
           size="large"
           fullWidth={isMd ? false : true}
-          href={'/agency'}
+          href={'/publications'}
         >
           View publications
         </Button>
@@ -57,7 +57,7 @@ const GetStarted = () => {
         >
           <Button
             component={'a'}
-            href={'/contact-sidebar-map'}
+            href={'/contact-us'}
             target={'blank'}
             variant="outlined"
             color="primary"
