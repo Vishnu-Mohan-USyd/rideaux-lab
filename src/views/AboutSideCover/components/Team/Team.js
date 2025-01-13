@@ -39,7 +39,7 @@ const mock = [
     name: 'Immy Breen',
     title: 'Intern',
     avatar: '/assets/Immy.png',
-    about: 'My name is Immy, I am a third-year undergraduate student from Cardiff University currently completing a research placement year at the University of Sydney. My research interests focus on understanding the neural mechanisms underlying sensory processing and how these processes are disrupted in neurological and psychiatric disorders like autism and schizophrenia. I am particularly fascinated by how research can contribute to improving people\'s quality of life by identifying key mechanisms and tailoring interventions to optimize individual performance.',
+    about: 'My name is Immy. I am a third-year undergraduate student from Cardiff University currently completing a research placement year at the University of Sydney. My research interests focus on understanding the neural mechanisms underlying sensory processing and how these processes are disrupted in neurological and psychiatric disorders like autism and schizophrenia. I am particularly fascinated by how research can contribute to improving people\'s quality of life by identifying key mechanisms and tailoring interventions to optimize individual performance.',
     social: {
       googleScholar: 'https://scholar.google.com/',
       github: 'https://github.com/immybreen',
