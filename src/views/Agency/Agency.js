@@ -103,7 +103,7 @@ const Agency = () => {
         </Container>
       </Box>
       <Box id="imaging" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
-        <Box className={'jarallax-img'} sx={styles('/assets/perception.jpeg')} />
+        <Box className={'jarallax-img'} sx={styles('/assets/thrd.jpg')} />
         <Container>
           <Goby />
         </Container>
@@ -120,7 +120,7 @@ const Agency = () => {
       {/*  </Container>*/}
       {/*</Box>*/}
       <Box id="adaptation" className={'jarallax'} data-jarallax data-speed="0.2" position={'relative'} minHeight={'100vh'} display={'flex'} alignItems={'center'}>
-        <Box className={'jarallax-img'} sx={styles('/assets/thrd.jpg')} />
+        <Box className={'jarallax-img'} sx={styles('/assets/fmri_1.jpeg')} />
         <Container>
           <Nike />
         </Container>
