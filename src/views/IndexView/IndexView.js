@@ -102,12 +102,14 @@ const IndexView = () => {
           height: '100%',
           zIndex: 0,                // keep it behind text but above <body> background
           pointerEvents: 'none',    // ignore mouse events
-          backgroundImage: 'url("/assets/brainfall.png")',
+          backgroundImage: 'url("/assets/rideauxlab_logo.png")',
           backgroundRepeat: 'repeat',
-          backgroundSize: '140px 80px',
+          backgroundSize: '200px 200px',
+          backgroundPosition: '0 0',
           animation: 'moveSnow 30s linear infinite',
+          filter: 'grayscale(100%)',
           // Make it faint
-          opacity: 0.02,
+          opacity: 0.05,
         }}
       />
 
