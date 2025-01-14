@@ -35,8 +35,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.kdg.anc.temporary.site
-          username: vysoforlife@rideauxlab.com
-          password: Kangaroo@619
+          username: kdgancte
+          password: jTZ610u68ehf9Os1
           local-dir: ./build/
           server-dir: /public_html/
           port: 21
