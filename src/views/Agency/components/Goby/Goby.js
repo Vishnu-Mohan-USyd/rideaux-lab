@@ -59,9 +59,9 @@ const Goby = () => {
         'The brain\'s capacity to adapt to sensory inputs is key for processing sensory information efficiently and interacting in new environments. Following repeated exposure to the same sensory input, brain activity in sensory areas is known to decrease as inputs become familiar, a process known as adaptation. Yet, the brain-wide mechanisms that mediate adaptive processing remain largely unknown. Here, we combine multimodal brain imaging (functional magnetic resonance imaging [fMRI], magnetic resonance spectroscopy) with behavioral measures...',
     },
     {
-      title: 'Fine-scale computations for adaptive processing in the human brain (2020, NMR in Biomedicine)',
+      title: 'Fine-scale computations for adaptive processing in the human brain (2020, eLife)',
       authors: 'Elisa Zamboni, Valentin G Kemper, Nuno Reis Goncalves, Ke JiaVasilis M Karlaftis, Samuel J Bell, Joseph Giorgio, Reuben Rideaux, Rainer Goebel, Zoe Kourtzi',
-      url: 'https://doi.org/10.1002/nbm.4702',
+      url: 'https://doi.org/10.7554/eLife.57637',
       description:
         'Adapting to the environment statistics by reducing brain responses to repetitive sensory information is key for efficient information processing. Yet, the fine-scale computations that support this adaptive processing in the human brain remain largely unknown. Here, we capitalise on the sub-millimetre resolution of ultra-high field imaging to examine functional magnetic resonance imaging signals across cortical depth and discern competing hypotheses about the brain mechanisms (feedforward vs. feedback) that mediate adaptive processing...',
     },
