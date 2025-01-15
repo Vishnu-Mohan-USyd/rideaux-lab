@@ -39,7 +39,7 @@ const Nike = () => {
         'Edited MRS sequences are widely used for studying γ-aminobutyric acid (GABA) in the human brain. Several algorithms are available for modelling these data, deriving metabolite concentration estimates through peak fitting or a linear combination of basis spectra. The present study compares seven such algorithms, using data obtained in a large multisite study...',
     },
     {
-      title: 'Comparison of methods for spectral alignment and signal modelling of GABA-edited MR spectroscopy data (2021, Elsevier NeuroImage)',
+      title: 'Comparison of methods for spectral alignment and signal modelling of GABA-edited MR spectroscopy data (2021, NeuroImage)',
       authors: 'Reuben Rideaux, Mark Mikkelsen , Richard A.E. Edden',
       url: 'https://doi.org/10.1016/j.neuroimage.2021.117900',
       description:
@@ -107,7 +107,7 @@ const Nike = () => {
               marginBottom: 0,
             }}
           >
-            This research seeks to develop new methods, or improve existing methods, for studying the brain.
+            This research seeks to develop and optimize methods for studying the brain.
           </Typography>
         </Box>
       </Box>

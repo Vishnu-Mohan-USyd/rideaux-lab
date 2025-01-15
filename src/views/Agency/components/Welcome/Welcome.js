@@ -31,10 +31,7 @@ const Welcome = () => {
           fontWeight: 400,
         }}
       >
-        We study the building blocks of sensory and
-        cognitive neural processing within the context of normative models of
-        brain function that emphasize efficient coding, and their role in neural
-        dysfuction.
+        We study the building blocks of sensory and cognitive neural processing within the context of normative models of brain function that emphasize efficient coding.
       </Typography>
       <Typography
         variant="heading3"

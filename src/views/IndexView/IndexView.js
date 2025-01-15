@@ -107,9 +107,15 @@ const IndexView = () => {
           backgroundSize: '200px 200px',
           backgroundPosition: '0 0',
           animation: 'moveSnow 30s linear infinite',
-          filter: 'grayscale(100%)',
-          // Make it faint
-          opacity: 0.05,
+          // Conditional styling based on theme mode
+          ...(theme.palette.mode === 'dark' ? {
+            filter: 'brightness(1.2)', // Slightly brighten in dark mode
+            opacity: 0.07, // Higher opacity in dark mode
+            mixBlendMode: 'screen', // This blend mode works well on dark backgrounds
+          } : {
+            filter: 'grayscale(100%)',
+            opacity: 0.05,
+          }),
         }}
       />
 

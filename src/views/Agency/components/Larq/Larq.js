@@ -31,21 +31,21 @@ const Larq = () => {
         'The speed-accuracy trade-off (SAT), whereby faster decisions increase the likelihood of an error, reflects a cognitive strategy humans must engage in during the performance of almost all daily tasks. To date, computational modeling has implicated the latent decision variable of response caution (thresholds), the amount of evidence required for a decision to be made, in the SAT...',
     },
     {
-      title: 'On the relationship between GABA+ and glutamate across the brain (2022, Elsevier NeuroImage)',
+      title: 'On the relationship between GABA+ and glutamate across the brain (2022, NeuroImage)',
       authors: 'Reuben Rideaux , Shane E. Ehrhardt , Yohan Wards , Hannah L. Filmer , Jin Jin , Dinesh K. Deelchand , Małgorzata Marjańska , Jason B. Mattingley, Paul E. Dux',
       url: 'https://www.sciencedirect.com/science/article/pii/S1053811922003949?via%3Dihub',
       description:
         'Equilibrium between excitation and inhibition (E/I balance) is key to healthy brain function. Conversely, disruption of normal E/I balance has been implicated in a range of central neurological pathologies. Magnetic resonance spectroscopy (MRS) provides a non-invasive means of quantifying in vivo concentrations of excitatory and inhibitory neurotransmitters, which could be used as diagnostic biomarkers...',
     },
     {
-      title: 'Neurochemical and functional interactions for improved perceptual decisions through training (2022, Journal of Neuroscience)',
+      title: 'Neurochemical and functional interactions for improved perceptual decisions through training (2022, Journal of Neurophysiology)',
       authors: 'Ke Jia, Polytimi Frangou, Vasilis M. Karlaftis, Joseph J. Ziminski, Joseph Giorgio, Reuben Rideaux, Elisa Zamboni, Victoria Hodgson, Uzay Emir and Zoe Kourtzi',
       url: 'https://journals.physiology.org/doi/full/10.1152/jn.00308.2021?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org',
       description:
         'Learning and experience are known to improve our ability to make perceptual decisions. Yet, our understanding of the brain mechanisms that support improved perceptual decisions through training remains limited. Here, we test the neurochemical and functional interactions that support learning for perceptual decisions in the context of an orientation identification task...',
     },
     {
-      title: 'No balance between glutamate+glutamine and GABA+ in visual or motor cortices of the human brain: A magnetic resonance spectroscopy study (2021, Elsevier NeuroImage)',
+      title: 'No balance between glutamate+glutamine and GABA+ in visual or motor cortices of the human brain: A magnetic resonance spectroscopy study (2021, NeuroImage)',
       authors: 'Reuben Rideaux',
       url: 'https://doi.org/10.1016/j.neuroimage.2021.118191',
       description:
@@ -59,7 +59,7 @@ const Larq = () => {
         'Magnetic resonance spectroscopy (MRS) can be used in vivo to quantify neurometabolite concentration and provide evidence for the involvement of different neurotransmitter systems (e.g., inhibitory and excitatory) in sensory and cognitive processes. The relatively low signal-to-noise ratio of MRS measurements has shaped the types of questions that it has been used to address. In particular, temporal resolution is often sacrificed in MRS studies to achieve a signal sufficient to produce a reliable estimate of neurometabolite concentration...',
     },
     {
-      title: 'Mixed-polarity random-dot stereograms alter GABA and Glx concentration in the early visual cortex (2019, Journal of Neuroscience)',
+      title: 'Mixed-polarity random-dot stereograms alter GABA and Glx concentration in the early visual cortex (2019, Journal of Neurophysiology)',
       authors: 'Reuben Rideaux, Nuno R. Goncalves and Andrew E. Welchman',
       url: 'https://doi.org/10.1152/jn.00208.2019',
       description:

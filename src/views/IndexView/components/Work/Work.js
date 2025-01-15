@@ -114,7 +114,7 @@ const Work = () => {
           methodology
         </Typography>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }}>
-          Three Key Methodologies
+          Key Methodologies
         </Typography>
       </Box>
 

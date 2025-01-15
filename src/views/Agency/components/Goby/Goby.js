@@ -61,7 +61,7 @@ const Goby = () => {
     {
       title: 'Fine-scale computations for adaptive processing in the human brain (2020, NMR in Biomedicine)',
       authors: 'Elisa Zamboni, Valentin G Kemper, Nuno Reis Goncalves, Ke JiaVasilis M Karlaftis, Samuel J Bell, Joseph Giorgio, Reuben Rideaux, Rainer Goebel, Zoe Kourtzi',
-      url: 'https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/nbm.4702',
+      url: 'https://doi.org/10.1002/nbm.4702',
       description:
         'Adapting to the environment statistics by reducing brain responses to repetitive sensory information is key for efficient information processing. Yet, the fine-scale computations that support this adaptive processing in the human brain remain largely unknown. Here, we capitalise on the sub-millimetre resolution of ultra-high field imaging to examine functional magnetic resonance imaging signals across cortical depth and discern competing hypotheses about the brain mechanisms (feedforward vs. feedback) that mediate adaptive processing...',
     },
@@ -80,14 +80,14 @@ const Goby = () => {
         'Throughout the brain, information from individual sources converges onto higher order neurons. For example, information from the two eyes first converges in binocular neurons in area V1. Some neurons are tuned to similarities between sources of information, which makes intuitive sense in a system striving to match multiple sensory signals to a single external cause—that is, establish causal inference. However, there are also neurons that are tuned to dissimilar information...',
     },
     {
-      title: 'Contextual effects on binocular matching are evident in primary visual cortex (2019, Elsevier Vision Research)',
+      title: 'Contextual effects on binocular matching are evident in primary visual cortex (2019, Vision Research)',
       authors: 'Reuben Rideaux and Andrew E. Welchman',
       url: 'https://doi.org/10.1016/j.visres.2019.04.001',
       description:
         'Global context can dramatically influence local visual perception. This phenomenon is well-documented for monocular features, e.g., the Kanizsa triangle. It has been demonstrated for binocular matching: the disambiguation of the Wallpaper Illusion via the luminance of the background. For monocular features, there is evidence that global context can influence neuronal responses as early as V1. However...',
     },
     {
-      title: 'Border ownership-dependent tilt aftereffect for shape defined by binocular disparity and motion parallax (2019, Journal of Neuroscience)',
+      title: 'Border ownership-dependent tilt aftereffect for shape defined by binocular disparity and motion parallax (2019, Journal of Neurophysiology)',
       authors: 'Reuben Rideaux and William J Harrison',
       url: 'https://doi.org/10.1152/jn.00111.2019',
       description:
@@ -129,14 +129,14 @@ const Goby = () => {
         'Recent findings have indicated the capacity to consolidate multiple items into visual short-term memory in parallel varies as a function of the type of information. That is, while color can be consolidated in parallel, evidence suggests that orientation cannot. Here we investigated the capacity to consolidate multiple motion directions in parallel and reexamined this capacity using orientation. This was achieved by determining the shortest exposure duration necessary to consolidate a single item...',
     },
     {
-      title: 'Information extraction during simultaneous motion processing (2014, Elsevier Vision Research)',
+      title: 'Information extraction during simultaneous motion processing (2014, Vision Research)',
       authors: 'Reuben Rideaux and Mark Edwards',
       url: 'https://doi.org/10.1016/j.visres.2013.11.007',
       description:
         'When confronted with multiple moving objects the visual system can process them in two stages: an initial stage in which a limited number of signals are processed in parallel (i.e. simultaneously) followed by a sequential stage. We previously demonstrated that during the simultaneous stage, observers could discriminate between presentations containing up to 5 vs. 6 spatially localized motion signals (Edwards & Rideaux, 2013). Here we investigate what information is actually extracted during the simultaneous stage...',
     },
     {
-      title: 'How many motion signals can be simultaneously perceived? (2013, Elsevier Vision Research)',
+      title: 'How many motion signals can be simultaneously perceived? (2013, Vision Research)',
       authors: 'Mark Edwards and Reuben Rideaux',
       url: 'https://doi.org/10.1016/j.visres.2012.10.004',
       description:
