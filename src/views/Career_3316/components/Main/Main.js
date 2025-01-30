@@ -47,7 +47,7 @@ const Main = () => {
           </Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
-          <Button variant="contained" color="primary" size="large">
+          <Button variant="contained" color="primary" size="large" href="mailto:reuben.rideaux@sydney.edu.au">
             Enquire Now
           </Button>
           {/*<Box*/}
@@ -72,27 +72,34 @@ const Main = () => {
               Summary
             </Typography>
             <Typography component={'p'}>
-              Our perception of the world does not solely rely on what our eyes see. Our actions
-              play a crucial role in shaping how we perceive the world around us. Three of the most
-              frequent actions are eye movements (saccades), reaching/grasping, and walking. The
-              first two are well studied and known to influence perception. During saccades, for
-              example, vision is briefly lost ("saccadic suppression") and when reaching, our eye
-              gaze diverts to the target and away from other objects. Despite its fundamental role
-              in our daily lives, little is known about how walking influences perception.
+              Our perception of the world does not solely rely on what our eyes
+              see. Our actions play a crucial role in shaping how we perceive
+              the world around us. Three of the most frequent actions are eye
+              movements (saccades), reaching/grasping, and walking. The first
+              two are well studied and known to influence perception. During
+              saccades, for example, vision is briefly lost ("saccadic
+              suppression") and when reaching, our eye gaze diverts to the
+              target and away from other objects. Despite its fundamental role
+              in our daily lives, little is known about how walking influences
+              perception.
               <p />
-              This project combines multiple technologies (virtual reality, electroencephalography, eye
-              tracking, motion platform, artificial intelligence) to test dynamic perception in
-              free-walking observers in virtual multisensory environments. It will reveal how walking
-              modulates perception at the step rate, the influence of intention (active vs passive
-              action) and establish the neural mechanisms underlying the perception/action link.
+              This project combines multiple technologies (virtual reality,
+              electroencephalography, eye tracking, motion platform, artificial
+              intelligence) to test dynamic perception in free-walking observers
+              in virtual multisensory environments. It will reveal how walking
+              modulates perception at the step rate, the influence of intention
+              (active vs passive action) and establish the neural mechanisms
+              underlying the perception/action link.
               <p />
-              Understanding the influence of walking on our perception holds the potential to improve
-              public safety and unlock myriad benefits in our daily lives. For example, the discovery
-              of saccadic suppression informed digital display design to improve user experiences
-              (e.g., exploiting saccadic masking, reduced motion blur.). The outcomes from this
-              project could be harnessed to inform public safety measures/policy and enhance the
-              efficiency of digital displays, communication systems, and device feedback mechanisms,
-              thereby enriching user experiences.
+              Understanding the influence of walking on our perception holds the
+              potential to improve public safety and unlock myriad benefits in
+              our daily lives. For example, the discovery of saccadic
+              suppression informed digital display design to improve user
+              experiences (e.g., exploiting saccadic masking, reduced motion
+              blur.). The outcomes from this project could be harnessed to
+              inform public safety measures/policy and enhance the efficiency of
+              digital displays, communication systems, and device feedback
+              mechanisms, thereby enriching user experiences.
             </Typography>
           </Box>
 
@@ -125,22 +132,24 @@ const Main = () => {
               Additional information
             </Typography>
             <Typography component={'p'} sx={{ marginBottom: 1 }}>
-              A full time 3-year fixed term postdoctoral position is open in the Lab of Dr.
-              Reuben Rideaux at the School of Psychology, University of Sydney, Australia. The
-              position is available immediately.
+              A full time 3-year fixed term postdoctoral position is open in the
+              Lab of Dr. Reuben Rideaux at the School of Psychology, University
+              of Sydney, Australia. The position is available immediately.
             </Typography>
             <Typography component={'p'} sx={{ marginBottom: 1 }}>
-              The selected candidate will work with Dr Rideaux and Prof David Alais on the project
-              “Seeing the world one step at a time”. This project combines multiple technologies
-              (virtual reality, electroencephalography, eye tracking, motion platform, artificial
-              intelligence) to test dynamic perception in free-walking healthy human observers in
-              virtual multisensory environments.
+              The selected candidate will work with Dr Rideaux and Prof David
+              Alais on the project “Seeing the world one step at a time”. This
+              project combines multiple technologies (virtual reality,
+              electroencephalography, eye tracking, motion platform, artificial
+              intelligence) to test dynamic perception in free-walking healthy
+              human observers in virtual multisensory environments.
             </Typography>
             <Typography component={'p'} sx={{ marginBottom: 1 }}>
-              The School of Psychology consistently ranks among the best in the world. In the most
-              recent QS World University Rankings, the School ranked in the Top 3 Psychology
-              departments in Australia and the Top 30 in the world, with the University of Sydney
-              ranking in the Top 20 universities in the world.
+              The School of Psychology consistently ranks among the best in the
+              world. In the most recent QS World University Rankings, the School
+              ranked in the Top 3 Psychology departments in Australia and the
+              Top 30 in the world, with the University of Sydney ranking in the
+              Top 20 universities in the world.
             </Typography>
 
             {/* Qualifications header (unchanged) */}
@@ -152,7 +161,12 @@ const Main = () => {
             <Grid container spacing={1} sx={{ marginBottom: 2 }}>
               {qualifications.map((item, idx) => (
                 <Grid item xs={12} key={idx}>
-                  <Box component={ListItem} disableGutters width={'auto'} padding={0}>
+                  <Box
+                    component={ListItem}
+                    disableGutters
+                    width={'auto'}
+                    padding={0}
+                  >
                     <Box
                       component={ListItemAvatar}
                       minWidth={'auto !important'}
@@ -185,8 +199,8 @@ const Main = () => {
             </Grid>
 
             <Typography component={'p'} sx={{ marginBottom: 1 }}>
-              We welcome applicants with diverse backgrounds, regardless of nationality, gender,
-              orientation, or disability status.
+              We welcome applicants with diverse backgrounds, regardless of
+              nationality, gender, orientation, or disability status.
             </Typography>
           </Box>
 
@@ -196,13 +210,21 @@ const Main = () => {
               Want to find out more?
             </Typography>
             <Typography component={'p'}>
-              Interested in this opportunity? Want to know what to do next? Please submit inquiries
-              and applications to{' '}
+              Interested in this opportunity? Want to know what to do next?
+              Please submit inquiries and applications to{' '}
               <Link href="mailto:reuben.rideaux@sydney.edu.au" color="error">
                 reuben.rideaux@sydney.edu.au
-              </Link>.
-              <br />
-              Applications will be reviewed and considered until the position is filled.
+              </Link>
+              . Applications will be reviewed and considered until the position is
+              filled.
+              <p>
+                For more detailed information on this role, visit the{' '}
+                <Link href="https://usyd.wd3.myworkdayjobs.com/USYD_EXTERNAL_CAREER_SITE/job/Camperdown-Campus/Postdoctoral-Research-Associate-in-Active-Perception_0128805-3" color="error">
+                  University of Sydney
+                </Link>
+                {' '}page.
+              </p>
+
             </Typography>
           </Box>
 
@@ -223,9 +245,7 @@ const Main = () => {
             </Typography>
             <Box component="ul" sx={{ pl: 2 }}>
               <Box component="li">
-                <Typography>
-                  Seeing the world one step at a time
-                </Typography>
+                <Typography>Seeing the world one step at a time</Typography>
               </Box>
             </Box>
           </Box>
