@@ -19,10 +19,10 @@ const Nike = () => {
     {
       title:
         'Energy efficiency and sensitivity benefits in a motion processing adaptive recurrent neural network (2025, Neural Networks)',
-      authors: 'Vishal Mohan and Reuben Rideaux',
+      authors: 'Vishnu Mohan, Reuben Rideaux',
       url: 'https://doi.org/10.1016/j.neunet.2025.107834',
       description:
-        'The paper introduces an adaptive recurrent neural network for motion processing that achieves greater sensitivity while reducing energy consumption compared to static models.',
+        'Motion processing is a key function for the survival of many organisms and is initially implemented in the primary visual cortex (V1) and the middle temporal area (V5/MT) of the primate visual cortex. Advances in machine learning approaches have led to the development of motion processing neural networks that have elucidated several aspects of this process. However, it remains unclear how adaptation, a canonical function of sensory processing, influences motion processing...',
     },
     {
       title: 'Task-related modulation of event-related potentials does not reflect changes to sensory representations (2024, Journal of Vision)',
