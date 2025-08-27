@@ -17,6 +17,14 @@ const Nike = () => {
   // Complete publication data
   const publications = [
     {
+      title:
+        'Energy efficiency and sensitivity benefits in a motion processing adaptive recurrent neural network (2025, Neural Networks)',
+      authors: 'Vishal Mohan and Reuben Rideaux',
+      url: 'https://doi.org/10.1016/j.neunet.2025.107834',
+      description:
+        'The paper introduces an adaptive recurrent neural network for motion processing that achieves greater sensitivity while reducing energy consumption compared to static models.',
+    },
+    {
       title: 'Task-related modulation of event-related potentials does not reflect changes to sensory representations (2024, Journal of Vision)',
       authors: 'Reuben Rideaux',
       url: 'https://doi.org/10.1162/imag_a_00266',

@@ -17,6 +17,40 @@ const Goby = () => {
   // Complete publication data
   const publications = [
     {
+      title:
+        'Violated predictions enhance the representational fidelity of visual features in perception (2025, Journal of Vision)',
+      authors:
+        'Reuben Rideaux, Phuong Dang, Liam Jackel-David, Dragan Rangelov and Jason B. Mattingley',
+      url: 'https://doi.org/10.1101/2024.03.27.587109',
+      description:
+        'The study shows that when sensory predictions are violated, visual feature representations become sharper, suggesting expectation errors refine perceptual coding.',
+    },
+    {
+      title:
+        'The influence of temporal context on vision over multiple time scales (2025, eLife)',
+      authors: 'Kyungkoo Lee and Reuben Rideaux',
+      url: 'https://doi.org/10.7554/eLife.106614',
+      description:
+        'This article demonstrates how visual perception is shaped by temporal context spanning from milliseconds to minutes, revealing adaptive mechanisms across multiple timescales.',
+    },
+    {
+      title:
+        'Distinct neurochemical predictors for different phases of decision-making learning (2025, Cerebral Cortex)',
+      authors:
+        'Molly Gordon, Shane E. Ehrhardt, Reuben Rideaux, Małgorzata Marjańska, Dinesh Deelchand, Zahra Eftekhari, Paul E. Dux and Hannah L. Filmer',
+      url: 'https://doi.org/10.1093/cercor/bhaf144',
+      description:
+        'Using magnetic resonance spectroscopy, the authors identify separate neurochemical markers that forecast early acquisition and later consolidation during decision-making training.',
+    },
+    {
+      title:
+        'Multimodal evidence challenges the effectiveness of probabilistic cueing for establishing sensory expectations (2025, Imaging Neuroscience)',
+      authors: 'Zhicheng Hu, Duy Tran and Reuben Rideaux',
+      url: 'https://doi.org/10.1101/2025.03.22.644773',
+      description:
+        'Across behavioral and neuroimaging measures, the authors find limited support for probabilistic cueing as a mechanism to set sensory expectations.',
+    },
+    {
       title: 'Inverted encoding of neural responses to audiovisual stimuli reveals super-additive multisensory enhancement (2024, eLife)',
       authors: 'Zak Buhmann, Amanda K Robinson, Jason B Mattingley and Reuben Rideaux',
       url: 'https://doi.org/10.7554/eLife.97230.2',
