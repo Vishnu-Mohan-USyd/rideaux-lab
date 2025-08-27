@@ -20,35 +20,35 @@ const Goby = () => {
       title:
         'Violated predictions enhance the representational fidelity of visual features in perception (2025, Journal of Vision)',
       authors:
-        'Reuben Rideaux, Phuong Dang, Liam Jackel-David, Dragan Rangelov and Jason B. Mattingley',
+        'Reuben Rideaux, Phuong Dang, Luke Jackel-David, Zak Buhmann, Dragan Rangelov and Jason B. Mattingley',
       url: 'https://doi.org/10.1101/2024.03.27.587109',
       description:
-        'The study shows that when sensory predictions are violated, visual feature representations become sharper, suggesting expectation errors refine perceptual coding.',
+        'Predictive coding theories argue that recent experience establishes expectations that generate prediction errors when violated. In humans, brain imaging studies have revealed unique signatures of violated predictions in sensory cortex, but the perceptual consequences of these effects remain unknown...',
     },
     {
       title:
         'The influence of temporal context on vision over multiple time scales (2025, eLife)',
-      authors: 'Kyungkoo Lee and Reuben Rideaux',
+      authors: 'Kacie Lee and Reuben Rideaux',
       url: 'https://doi.org/10.7554/eLife.106614',
       description:
-        'This article demonstrates how visual perception is shaped by temporal context spanning from milliseconds to minutes, revealing adaptive mechanisms across multiple timescales.',
+        'Past sensory experiences influence perception of the present. Multiple research subfields have emerged to study this phenomenon at different temporal scales. These fall into three categories: the influence of immediately preceding sensory events (micro), short sequences of events (meso), and regularities over long sequences of events (macro). In a single paradigm, we examined the influence of temporal context on perception at each scale...',
     },
     {
       title:
         'Distinct neurochemical predictors for different phases of decision-making learning (2025, Cerebral Cortex)',
       authors:
-        'Molly Gordon, Shane E. Ehrhardt, Reuben Rideaux, Małgorzata Marjańska, Dinesh Deelchand, Zahra Eftekhari, Paul E. Dux and Hannah L. Filmer',
+        'Matilda Gordon , Shane Ehrhardt , Reuben Rideaux , Małgorzata Marjańska , Dinesh Deelchand , Zeinab Eftekhari , Paul E Dux , Hannah L Filmer',
       url: 'https://doi.org/10.1093/cercor/bhaf144',
       description:
-        'Using magnetic resonance spectroscopy, the authors identify separate neurochemical markers that forecast early acquisition and later consolidation during decision-making training.',
+        'Fast and accurate sensory–motor mapping is characteristic of successful interaction with our environment and decision-making. Learning is crucial for the development of decision-making processes and has been linked to the balance of excitatory (glutamate) and inhibitory (γ-aminobutyric acid [GABA]) neurochemicals in the cortex. However, learning is not a unitary phenomenon and occurs across time. How neurochemical concentrations are involved, and the role...',
     },
     {
       title:
         'Multimodal evidence challenges the effectiveness of probabilistic cueing for establishing sensory expectations (2025, Imaging Neuroscience)',
-      authors: 'Zhicheng Hu, Duy Tran and Reuben Rideaux',
+      authors: 'Ziyue Hu, Dominic M. D. Tran, Reuben Rideaux',
       url: 'https://doi.org/10.1101/2025.03.22.644773',
       description:
-        'Across behavioral and neuroimaging measures, the authors find limited support for probabilistic cueing as a mechanism to set sensory expectations.',
+        'Predictive coding theories posit a reduction in error-signalling neural activity when incoming sensory input matches existing expectations – a phenomenon termed expectation suppression. However, the empirical evidence for expectation suppression, as well as its underlying neural mechanism, is contentious. A further aspect of predictive coding that remains untested is how predictions are integrated across sensorimotor domains...',
     },
     {
       title: 'Inverted encoding of neural responses to audiovisual stimuli reveals super-additive multisensory enhancement (2024, eLife)',
