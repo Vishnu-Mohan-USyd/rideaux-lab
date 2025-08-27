@@ -19,10 +19,10 @@ const Larq = () => {
     {
       title:
         'Reply to: “Model mimicry limits conclusions about neural tuning and can mistakenly imply unlikely priors” (2025, Nature Communications)',
-      authors: 'Reuben Rideaux, Paul M. Bays and William J. Harrison',
+      authors: 'Reuben Rideaux, Paul M. Bays & William J. Harrison',
       url: 'https://doi.org/10.1038/s41467-025-60860-9',
       description:
-        'This commentary addresses concerns about model mimicry in neural tuning studies, clarifying how assumptions about priors influence interpretations of sensory coding.',
+        'A key goal of visual neuroscience is to understand how the physical properties of the world are represented by the brain. Efficient coding theory1,2 states that neural resources allocated to coding environmental features should be proportional to the frequency with which those features are found in nature. We recently found3 a horizontal bias in the neural representation of visual orientation, as measured in humans with electroencephalography (EEG)...',
     },
     {
       title: 'Neurochemical Predictors of Generalized Learning Induced by Brain Stimulation and Training (2024, Journal of Neuroscience)',
