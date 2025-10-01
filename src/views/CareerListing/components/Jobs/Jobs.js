@@ -11,41 +11,7 @@ import Select from '@mui/material/Select';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-export const mock = [
-  {
-    id: 'phd-2024-1',
-    title: 'Fully-funded PhD Position',
-    location: 'Sydney',
-    type: 'Full time',
-    team: 'Dr Reuben Rideaux',
-    subtitle: 'Seeing the world one step at a time (3596)',
-    role: 'phd',
-    applicationUrl: '/career-opening',
-    isExternal: false
-  },
-  {
-    id: 'postdoc-2024-1',
-    title: 'Postdoctoral Researcher',
-    location: 'Sydney',
-    type: 'Full time',
-    team: 'Dr Reuben Rideaux',
-    subtitle: 'Seeing the world one step at a time',
-    role: 'postdoc',
-    applicationUrl: '/career-postdoc',
-    isExternal: false
-  },
-  {
-    id: 'phd-2024-2',
-    title: 'PhD Position',
-    location: 'Sydney',
-    type: 'Full time',
-    team: 'Dr Reuben Rideaux',
-    subtitle: 'Behavioural and neural investigations of human sensory and cognitive processes (3316)',
-    role: 'phd',
-    applicationUrl: '/career-phd',
-    isExternal: true
-  },
-];
+export const mock = [];
 
 const Jobs = () => {
   const theme = useTheme();
@@ -209,7 +175,7 @@ const Jobs = () => {
             Research and Development
           </Typography>
           <Typography color={'text.secondary'}>
-            We're currently looking for researchers and lab assistants.
+            We are not currently hiring. Please check back for future opportunities.
           </Typography>
         </Box>
         <Box
@@ -303,7 +269,7 @@ const Jobs = () => {
         ) : (
           <Grid item xs={12}>
             <Typography variant="h6" align="center" color="text.secondary">
-              No positions match your criteria.
+              There are currently no lab openings. Please check back later.
             </Typography>
           </Grid>
         )}
