@@ -5,13 +5,7 @@ import {
   // eslint-disable-next-line no-unused-vars
   Typography,
   useTheme,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Divider,
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Award } from 'lucide-react';
 
 const GrantsDisplay = () => {
   const theme = useTheme();
@@ -175,65 +169,21 @@ const GrantsDisplay = () => {
 
       <Box width="100%" maxWidth={900}>
         {grants.map((grant) => (
-          <Accordion
+          <Box
             key={grant.id}
             sx={{
               borderRadius: 2,
               marginBottom: 2,
-              overflow: 'hidden',
+              padding: 2,
               border: `1px solid ${
                 theme.palette.mode === 'dark' ? '#444' : '#ccc'
               }`,
             }}
           >
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Box
-                display="flex"
-                flexDirection={{ xs: 'column', sm: 'row' }}
-                alignItems="center"
-                gap={2}
-                width="100%"
-              >
-                <Box
-                  component="img"
-                  src={grant.logo}
-                  alt={`${grant.organization} logo`}
-                  sx={{
-                    width: 60,
-                    height: 'auto',
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-
-                <Box display="flex" flexDirection="column" flexGrow={1} gap={0.5}>
-                  {/* Row with an Award icon + date */}
-                  <Box display="flex" alignItems="center" gap={1}>
-                    <Award size={20} className="text-yellow-500" />
-                    <Typography variant="subtitle2" color="text.secondary">
-                      {grant.dateRange}
-                    </Typography>
-                  </Box>
-
-                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                    {grant.organization}
-                  </Typography>
-                  <Typography variant="body1" color="text.primary">
-                    {grant.title}
-                  </Typography>
-                </Box>
-              </Box>
-            </AccordionSummary>
-
-            <AccordionDetails>
-              <Divider sx={{ my: 2 }} />
-              <Typography variant="body2" color="text.secondary">
-                {grant.additionalInfo || 'No additional details provided.'}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+            <Typography variant="body1" color="text.primary" sx={{ fontWeight: 600 }}>
+              {grant.title}
+            </Typography>
+          </Box>
         ))}
       </Box>
     </Box>
