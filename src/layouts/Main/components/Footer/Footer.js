@@ -31,8 +31,8 @@ const Footer = () => {
               component={'img'}
               src={
                 mode === 'light'
-                  ? '/LAB_LOGO.svg'
-                  : '/LAB_LOGO.svg'
+                  ? '/assets/LAB_LOGO.png'
+                  : '/assets/LAB_LOGO.png'
               }
               height={1}
               width={1}
