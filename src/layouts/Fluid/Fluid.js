@@ -75,8 +75,8 @@ const Fluid = ({
                 component={'img'}
                 src={
                   mode === 'light' && !colorInvert
-                    ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                    : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                    ? '/LAB_LOGO.svg'
+                    : '/LAB_LOGO.svg'
                 }
                 height={1}
                 width={1}

@@ -31,8 +31,8 @@ const Footer = () => {
               component={'img'}
               src={
                 mode === 'light'
-                  ? '/rideauxlab_logo.svg'
-                  : '/rideauxlab_logo.svg'
+                  ? '/LAB_LOGO.svg'
+                  : '/LAB_LOGO.svg'
               }
               height={1}
               width={1}
