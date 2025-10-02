@@ -1,17 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import {
-  Box,
-  // eslint-disable-next-line no-unused-vars
-  Typography,
-  useTheme,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Divider,
-} from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Award } from 'lucide-react';
+import { Box, Typography, useTheme } from '@mui/material';
 
 const GrantsDisplay = () => {
   const theme = useTheme();
@@ -161,6 +150,12 @@ const GrantsDisplay = () => {
     },
   ];
 
+  const getGrantYear = (dateRange) => {
+    if (!dateRange) return '';
+    const [startYear] = dateRange.split('-');
+    return startYear.trim();
+  };
+
   return (
     <Box
       display="flex"
@@ -173,67 +168,54 @@ const GrantsDisplay = () => {
         Funding
       </Typography>
 
-      <Box width="100%" maxWidth={900}>
+      <Box
+        width="100%"
+        maxWidth={900}
+        display="flex"
+        flexDirection="column"
+        gap={2}
+      >
         {grants.map((grant) => (
-          <Accordion
+          <Box
             key={grant.id}
+            display="flex"
+            flexDirection={{ xs: 'column', sm: 'row' }}
+            alignItems="center"
+            gap={2}
+            borderRadius={2}
+            padding={2}
             sx={{
-              borderRadius: 2,
-              marginBottom: 2,
-              overflow: 'hidden',
               border: `1px solid ${
                 theme.palette.mode === 'dark' ? '#444' : '#ccc'
               }`,
+              backgroundColor:
+                theme.palette.mode === 'dark' ? 'rgba(255,255,255,0.04)' : '#fff',
             }}
           >
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Box
-                display="flex"
-                flexDirection={{ xs: 'column', sm: 'row' }}
-                alignItems="center"
-                gap={2}
-                width="100%"
-              >
-                <Box
-                  component="img"
-                  src={grant.logo}
-                  alt={`${grant.organization} logo`}
-                  sx={{
-                    width: 60,
-                    height: 'auto',
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
+            <Box
+              component="img"
+              src={grant.logo}
+              alt={`${grant.organization} logo`}
+              sx={{
+                width: 60,
+                height: 'auto',
+                filter:
+                  theme.palette.mode === 'dark'
+                    ? 'brightness(0) invert(0.7)'
+                    : 'none',
+              }}
+            />
 
-                <Box display="flex" flexDirection="column" flexGrow={1} gap={0.5}>
-                  {/* Row with an Award icon + date */}
-                  <Box display="flex" alignItems="center" gap={1}>
-                    <Award size={20} className="text-yellow-500" />
-                    <Typography variant="subtitle2" color="text.secondary">
-                      {grant.dateRange}
-                    </Typography>
-                  </Box>
-
-                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                    {grant.organization}
-                  </Typography>
-                  <Typography variant="body1" color="text.primary">
-                    {grant.title}
-                  </Typography>
-                </Box>
-              </Box>
-            </AccordionSummary>
-
-            <AccordionDetails>
-              <Divider sx={{ my: 2 }} />
-              <Typography variant="body2" color="text.secondary">
-                {grant.additionalInfo || 'No additional details provided.'}
+            <Box display="flex" flexDirection="column" flexGrow={1} gap={0.5}>
+              <Typography variant="subtitle2" color="text.secondary">
+                {getGrantYear(grant.dateRange)}
               </Typography>
-            </AccordionDetails>
-          </Accordion>
+
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                {grant.organization}
+              </Typography>
+            </Box>
+          </Box>
         ))}
       </Box>
     </Box>
