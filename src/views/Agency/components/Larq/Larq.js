@@ -17,14 +17,6 @@ const Larq = () => {
   // Complete publication data
   const publications = [
     {
-      title:
-        'Reply to: “Model mimicry limits conclusions about neural tuning and can mistakenly imply unlikely priors” (2025, Nature Communications)',
-      authors: 'Reuben Rideaux, Paul M. Bays & William J. Harrison',
-      url: 'https://doi.org/10.1038/s41467-025-60860-9',
-      description:
-        'A key goal of visual neuroscience is to understand how the physical properties of the world are represented by the brain. Efficient coding theory1,2 states that neural resources allocated to coding environmental features should be proportional to the frequency with which those features are found in nature. We recently found3 a horizontal bias in the neural representation of visual orientation, as measured in humans with electroencephalography (EEG)...',
-    },
-    {
       title: 'Neurochemical Predictors of Generalized Learning Induced by Brain Stimulation and Training (2024, Journal of Neuroscience)',
       authors: 'Shane E. Ehrhardt, Yohan Wards, Reuben Rideaux, Małgorzata Marjańska, Jin Jin, Martijn A. Cloos, Dinesh K. Deelchand, Helge J. Zöllner, Muhammad G. Saleh, Steve C. N. Hui, Tonima Ali, Thomas B. Shaw, Markus Barth, Jason B. Mattingley, Hannah L. Filmer and Paul E. Dux',
       url: 'https://www.jneurosci.org/content/44/21/e1676232024',
