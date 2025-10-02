@@ -19,16 +19,16 @@ const Goby = () => {
     {
       title:
         'Investigating orientation adaptation following naturalistic film viewing (2025, Scientific Reports)',
-      authors: 'Amine I-Izzeddin, Reuben Rideaux, Jason B. Mattingley and William J. Harrison',
-      url: 'https://www.nature.com/srep/',
+      authors: 'Emily J. A-Izzeddin, Reuben Rideaux, Jason B. Mattingley and William J. Harrison',
+      url: 'https://www.nature.com/articles/s41598-025-21383-x',
       description:
-        'Orientation-selective adaptation is a cornerstone of visual processing, yet it remains unclear how it manifests during complex, naturalistic experiences. This study examines how prolonged exposure to oriented content within films shapes subsequent perceptual sensitivity, revealing robust adaptation effects that persist beyond the laboratory and highlighting the ecological relevance of orientation-tuned mechanisms...',
+        'Humans display marked changes to their perceptual experience of a stimulus following prolonged or repeated exposure to a preceding stimulus. A well-studied example of such perceptual adaptation is the tilt-aftereffect. Here, prolonged exposure to one orientation leads to a shift in the perception of subsequent orientations. Such a capacity to adapt suggests the tuning of the visual system can change over time in response to our current visual environment. However, it remains unclear to what extent adaptation occurs in response to statistical regularities of features present in naturalistic scenes, such as oriented contrast. We therefore investigated orientation adaptation in response to natural viewing of filtered live-action film stimuli....',
     },
     {
       title:
         'Reply to: “Model mimicry limits conclusions about neural tuning and can mistakenly imply unlikely priors” (2025, Nature Communications)',
       authors: 'Reuben Rideaux, Paul M. Bays & William J. Harrison',
-      url: 'https://doi.org/10.1038/s41467-025-60860-9',
+      url: 'https://www.nature.com/articles/s41467-025-60860-9',
       description:
         'A key goal of visual neuroscience is to understand how the physical properties of the world are represented by the brain. Efficient coding theory states that neural resources allocated to coding environmental features should be proportional to the frequency with which those features are found in nature. We recently found a horizontal bias in the neural representation of visual orientation, as measured in humans with electroencephalography...',
     },
