@@ -58,6 +58,13 @@ const mock = [
     },
   },
   {
+    name: 'Cameron Phan',
+    title: 'Postdoctoral Researcher',
+    avatar: '/assets/Cameron.jpg',
+    about:
+      'My research interests lie in all things perception, cognition, and action (except face perception). I am particularly interested in the moments when any of the three intersect (e.g., changes to sensory sensitivity during action, influence of action on information recall, etc.) and applying mathematical models (e.g., Bayesian observer, sensorimotor component, and signal processing models, etc.) to better understand the potential underlying mechanisms involved in their interactions. Currently, my research is focused on the cyclic influence of walking on tasks involving these three components.',
+  },
+  {
     name: 'Vishnu Mohan',
     title: 'MPhil Researcher',
     avatar: '/assets/vish.JPG',
