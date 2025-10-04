@@ -102,7 +102,10 @@ const IndexView = () => {
           height: '100%',
           zIndex: 0,                // keep it behind text but above <body> background
           pointerEvents: 'none',    // ignore mouse events
-          backgroundImage: 'url("/assets/LAB_LOGO.png")',
+          backgroundImage:
+            theme.palette.mode === 'dark'
+              ? 'url("/assets/LAB_LOGO_dark.png")'
+              : 'url("/assets/LAB_LOGO.png")',
           backgroundRepeat: 'repeat',
           backgroundSize: '200px 200px',
           backgroundPosition: '0 0',

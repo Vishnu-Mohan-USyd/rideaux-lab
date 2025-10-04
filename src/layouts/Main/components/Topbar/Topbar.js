@@ -41,7 +41,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           src={
             mode === 'light' && !colorInvert
               ? '/assets/LAB_LOGO.png'
-              : '/assets/LAB_LOGO.png'
+              : '/assets/LAB_LOGO_dark.png'
           }
           height={1}
           width={1}
