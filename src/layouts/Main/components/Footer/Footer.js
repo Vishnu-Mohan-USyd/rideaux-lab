@@ -32,7 +32,7 @@ const Footer = () => {
               src={
                 mode === 'light'
                   ? '/assets/LAB_LOGO.png'
-                  : '/assets/LAB_LOGO.png'
+                  : '/assets/LAB_LOGO_dark.png'
               }
               height={1}
               width={1}
