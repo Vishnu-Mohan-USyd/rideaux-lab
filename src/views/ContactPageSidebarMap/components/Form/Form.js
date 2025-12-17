@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Box from '@mui/material/Box';
@@ -13,6 +13,9 @@ import Alert from '@mui/material/Alert';
 import emailjs from '@emailjs/browser';
 
 import Container from 'components/Container'; // Adjust this import if needed
+
+// Initialize EmailJS once at module load (same pattern as career forms)
+emailjs.init('tCN1dFcOBCtCrk491');
 
 // ------------------- 1) Validation Schema -------------------
 const validationSchema = yup.object({
@@ -43,16 +46,15 @@ const validationSchema = yup.object({
 const Contact = () => {
   const theme = useTheme();
 
+  // Reference to the form so we can pass it to emailjs.sendForm
+  const formRef = useRef(null);
+
   // -------------- A) Submission Alert State --------------
   const [submitStatus, setSubmitStatus] = useState({
     show: false,
     success: false,
     message: '',
   });
-
-  // -------------- B) Initialize EmailJS --------------
-  // If you prefer, you can place this in a useEffect or in a separate file.
-  emailjs.init('tCN1dFcOBCtCrk491'); // <-- Replace with your actual Public Key
 
   // ------------------- 3) Left Side (Form) -------------------
   const LeftSide = () => {
@@ -73,20 +75,12 @@ const Contact = () => {
           message: 'Sending message...',
         });
 
-        // Build the template parameters (match with your EmailJS template)
-        const templateParams = {
-          from_name: `${values.firstName} ${values.lastName}`,
-          from_email: values.email,
-          message: values.message,
-          // You can add more fields if your EmailJS template has them
-          // e.g. to_name, phone, etc.
-        };
-
-        // Send email with EmailJS
-        const response = await emailjs.send(
-          'service_6q1p18j',      // <-- Replace with your actual service ID
-          'template_j2kjadd',    // <-- Replace with your actual template ID
-          templateParams
+        // Send email with EmailJS using the form reference (matches career forms logic)
+        const response = await emailjs.sendForm(
+          'service_6q1p18j',
+          'template_j2kjadd',
+          formRef.current,
+          'tCN1dFcOBCtCrk491'
         );
 
         // Check response status
@@ -154,7 +148,14 @@ const Contact = () => {
 
         {/* Our contact form */}
         <Box>
-          <form noValidate onSubmit={formik.handleSubmit}>
+          <form noValidate onSubmit={formik.handleSubmit} ref={formRef}>
+            {/* Hidden field to mirror the career form's full name payload */}
+            <input
+              type="hidden"
+              name="fullName"
+              value={`${formik.values.firstName} ${formik.values.lastName}`.trim()}
+              readOnly
+            />
             <Grid container spacing={4}>
               {/* First Name */}
               <Grid item xs={12} sm={6}>
