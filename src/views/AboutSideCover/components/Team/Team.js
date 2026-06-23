@@ -67,7 +67,7 @@ const mock = [
   {
     name: 'Dominic Tran',
     title: 'Postdoctoral Researcher',
-    avatar: '/assets/Dominic.jpg',
+    avatar: '/assets/Dominic.webp',
     about:
       'I conduct research in behavioural and cognitive neuroscience. My research expertise is in learning, memory, and cognition. I use behavioural and neurophysiological methods (e.g., transcranial magnetic stimulation and electroencephalography) to investigate the relationship between brain and behaviour. I am interested in understanding how our past experiences shape our beliefs, actions, and habits.',
   },
