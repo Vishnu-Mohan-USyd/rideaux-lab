@@ -65,6 +65,13 @@ const mock = [
       'My research interests lie in all things perception, cognition, and action (except face perception). I am particularly interested in the moments when any of the three intersect (e.g., changes to sensory sensitivity during action, influence of action on information recall, etc.) and applying mathematical models (e.g., Bayesian observer, sensorimotor component, and signal processing models, etc.) to better understand the potential underlying mechanisms involved in their interactions. Currently, my research is focused on the cyclic influence of walking on tasks involving these three components.',
   },
   {
+    name: 'Dominic Tran',
+    title: 'Postdoctoral Researcher',
+    avatar: '/assets/Dominic.jpg',
+    about:
+      'I conduct research in behavioural and cognitive neuroscience. My research expertise is in learning, memory, and cognition. I use behavioural and neurophysiological methods (e.g., transcranial magnetic stimulation and electroencephalography) to investigate the relationship between brain and behaviour. I am interested in understanding how our past experiences shape our beliefs, actions, and habits.',
+  },
+  {
     name: 'Vishnu Mohan',
     title: 'MPhil Researcher',
     avatar: '/assets/vish.JPG',
