@@ -73,7 +73,7 @@ const mock = [
   },
   {
     name: 'Vishnu Mohan',
-    title: 'MPhil Researcher',
+    title: 'Researcher',
     avatar: '/assets/vish.JPG',
     about: 'I\'m doing my MPhil here. My research interests lie at the intersection of artificial intelligence and neuroscience.',
     social: {
