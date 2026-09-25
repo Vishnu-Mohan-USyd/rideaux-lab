@@ -18,6 +18,18 @@ const Goby = () => {
   const publications = [
     {
       title:
+        'Faster but less precise: expectation enhances response speed while reducing sensory fidelity (2026, Journal of Neuroscience)',
+      authors: 'Ziyue Hu, Dominic Tran and Reuben Rideaux',
+      url: 'https://doi.org/10.1523/JNEUROSCI.0154-26.2026',
+    },
+    {
+      title:
+        'Late cross-modal biases in neural spatial representations revealed by EEG decoding (2026, Journal of Neuroscience)',
+      authors: 'Zak Buhmann, Amanda K. Robinson, Jason B. Mattingley and Reuben Rideaux',
+      url: 'https://doi.org/10.1523/JNEUROSCI.0242-26.2026',
+    },
+    {
+      title:
         'Investigating orientation adaptation following naturalistic film viewing (2025, Scientific Reports)',
       authors: 'Emily J. A-Izzeddin, Reuben Rideaux, Jason B. Mattingley and William J. Harrison',
       url: 'https://www.nature.com/articles/s41598-025-21383-x',
