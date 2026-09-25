@@ -17,6 +17,20 @@ const Larq = () => {
   // Complete publication data
   const publications = [
     {
+      title:
+        'Neurochemical correlates of mind-wandering and meta-awareness (2026, Journal of Neuroscience)',
+      authors:
+        'Kara Parsons, Hannah L. Filmer, Shane E. Ehrhardt, Matilda Gordon, Reuben Rideaux, Paul E. Dux and Natasha Matthews',
+      url: 'https://doi.org/10.1523/JNEUROSCI.1054-25.2026',
+    },
+    {
+      title:
+        'Baseline Neurochemical Excitability and Individual Differences in Motor Learning and Non-Invasive Brain Stimulation Outcomes (2026, Cortex)',
+      authors:
+        'Matilda S. Gordon, Shane E. Ehrhardt, Reuben Rideaux, Claire Bradley, Paul E. Dux and Hannah L. Filmer',
+      url: 'https://doi.org/10.1016/j.cortex.2026.05.009',
+    },
+    {
       title: 'Neurochemical Predictors of Generalized Learning Induced by Brain Stimulation and Training (2024, Journal of Neuroscience)',
       authors: 'Shane E. Ehrhardt, Yohan Wards, Reuben Rideaux, Małgorzata Marjańska, Jin Jin, Martijn A. Cloos, Dinesh K. Deelchand, Helge J. Zöllner, Muhammad G. Saleh, Steve C. N. Hui, Tonima Ali, Thomas B. Shaw, Markus Barth, Jason B. Mattingley, Hannah L. Filmer and Paul E. Dux',
       url: 'https://www.jneurosci.org/content/44/21/e1676232024',
