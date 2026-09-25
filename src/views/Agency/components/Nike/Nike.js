@@ -18,6 +18,15 @@ const Nike = () => {
   const publications = [
     {
       title:
+        'Closing the empirical loop: autonomous AI agents conduct end-to-end research with human participants (2026, Advanced Science)',
+      authors:
+        'Gabrielle Wehr, Reuben Rideaux, Amaya J. Fox, David R. Lightfoot, Jason Tangen, Jason B. Mattingley and Shane E. Ehrhardt',
+      url: 'https://doi.org/10.1002/advs.76675',
+      description:
+        'Artificial intelligence systems are transforming scientific discovery by accelerating specific research tasks, from protein structure prediction to materials design, yet remain confined to narrow domains requiring substantial human oversight. Exponential growth of scientific literature and increasing domain specialization constrain researchers\' capacity to synthesize knowledge across disciplines and develop unifying theories, motivating exploration of general‐purpose AI systems for science. Here we show that a domain‐agnostic, agentic AI Scientist system can independently navigate the scientific workflow ‐from hypothesis generation through data collection to manuscript preparation...',
+    },
+    {
+      title:
         'Energy efficiency and sensitivity benefits in a motion processing adaptive recurrent neural network (2025, Neural Networks)',
       authors: 'Vishnu Mohan, Reuben Rideaux',
       url: 'https://doi.org/10.1016/j.neunet.2025.107834',

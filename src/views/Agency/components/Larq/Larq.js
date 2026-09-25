@@ -17,6 +17,24 @@ const Larq = () => {
   // Complete publication data
   const publications = [
     {
+      title:
+        'Neurochemical correlates of mind-wandering and meta-awareness (2026, Journal of Neuroscience)',
+      authors:
+        'Kara Parsons, Hannah L. Filmer, Shane E. Ehrhardt, Matilda Gordon, Reuben Rideaux, Paul E. Dux and Natasha Matthews',
+      url: 'https://doi.org/10.1523/JNEUROSCI.1054-25.2026',
+      description:
+        'Mind-wandering frequently occurs throughout daily life, diverting attention away from both goal-oriented behavior and internal mental operations. The experience of mind-wandering varies in both the degree to which an individual is aware of their attentional state (meta-awareness) and the extent of their intention to mind-wander. Prior research links mind-wandering with the brain\'s default mode network...',
+    },
+    {
+      title:
+        'Baseline Neurochemical Excitability and Individual Differences in Motor Learning and Non-Invasive Brain Stimulation Outcomes (2026, Cortex)',
+      authors:
+        'Matilda S. Gordon, Shane E. Ehrhardt, Reuben Rideaux, Claire Bradley, Paul E. Dux and Hannah L. Filmer',
+      url: 'https://doi.org/10.1016/j.cortex.2026.05.009',
+      description:
+        'Motor skill acquisition arises from complex interactions between inhibitory and excitatory neurotransmission in sensorimotor circuits. While non-invasive neuromodulation via transcranial direct current stimulation (tDCS) and transcranial magnetic stimulation (TMS) can influence motor learning, the underlying neurochemical determinants of this remain poorly defined. Using ultra-high field (7 T) magnetic resonance spectroscopy (MRS) in eighty human participants of both sexes (53-70 participants after exclusions), we quantified GABA and glutamate concentrations (together providing E/I balance) in M1, prefrontal cortex and the intraparietal sulcus (IPS)...',
+    },
+    {
       title: 'Neurochemical Predictors of Generalized Learning Induced by Brain Stimulation and Training (2024, Journal of Neuroscience)',
       authors: 'Shane E. Ehrhardt, Yohan Wards, Reuben Rideaux, Małgorzata Marjańska, Jin Jin, Martijn A. Cloos, Dinesh K. Deelchand, Helge J. Zöllner, Muhammad G. Saleh, Steve C. N. Hui, Tonima Ali, Thomas B. Shaw, Markus Barth, Jason B. Mattingley, Hannah L. Filmer and Paul E. Dux',
       url: 'https://www.jneurosci.org/content/44/21/e1676232024',

@@ -18,6 +18,22 @@ const Goby = () => {
   const publications = [
     {
       title:
+        'Faster but less precise: expectation enhances response speed while reducing sensory fidelity (2026, Journal of Neuroscience)',
+      authors: 'Ziyue Hu, Dominic Tran and Reuben Rideaux',
+      url: 'https://doi.org/10.1523/JNEUROSCI.0154-26.2026',
+      description:
+        'The brain\'s remarkable ability to process continuous sensory inputs with adaptive efficiency—balancing flexibility while minimizing metabolic cost—is thought to rely on predictive mechanisms that generate and update internal models that leverage statistical regularities in the environment. However, it remains unclear whether this efficiency arises from prioritizing reliable, expected events or informative, unexpected ones, as they offer complementary adaptive advantages. To isolate genuine expectation effects, we combined electroencephalography (EEG), pupillometry, and behavioral measures in a paradigm that independently manipulated task relevance (selective attention) and stimulus predictability, while minimizing stimulus repetition at identical spatial locations to control for low-level adaptation...',
+    },
+    {
+      title:
+        'Late cross-modal biases in neural spatial representations revealed by EEG decoding (2026, Journal of Neuroscience)',
+      authors: 'Zak Buhmann, Amanda K. Robinson, Jason B. Mattingley and Reuben Rideaux',
+      url: 'https://doi.org/10.1523/JNEUROSCI.0242-26.2026',
+      description:
+        'During audiovisual perception, spatial information from vision and audition is combined, often producing biases such as the ventriloquist effect. While these interactions are well documented behaviourally, it remains unclear when cross-modal information begins to alter modality-specific spatial representations in the brain. Here we used cross-generalised inverted encoding modelling of electroencephalography (EEG) data to track the temporal evolution of spatial representations during a spatial ventriloquist task...',
+    },
+    {
+      title:
         'Investigating orientation adaptation following naturalistic film viewing (2025, Scientific Reports)',
       authors: 'Emily J. A-Izzeddin, Reuben Rideaux, Jason B. Mattingley and William J. Harrison',
       url: 'https://www.nature.com/articles/s41598-025-21383-x',
